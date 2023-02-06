@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    /*
+     При добавлении padding блок начинает
+     становится больше, что бы этот эффект
+     убрать пишем box-sizing: border-box;
+     */
+}
+.title {
+    border: 3px solid orange;
+}
+.testImg {
+    margin-top: 40px;
+    width: 400px;
+    height: 400px;
+    border: 3px solid orange;
+
+
+    /*
+    background: orange;
+    background-image: url("../img/testImg.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+
+      Внизу замена этого большого кода*/
+
+    background: orange url('../img/testImg.png') no-repeat center top / contain;
+}

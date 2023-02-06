@@ -1,0 +1,151 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    font-weight: 800;
+    line-height: 132.9%;
+    text-transform: uppercase;
+}
+p {
+    line-height: 132.9%;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style-type: none;
+}
+ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+.flex {
+    display: flex;
+}
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.header, .dreams  {
+    background: #1326CE;
+    color: white;
+}
+.header .container .title {
+    justify-content: space-between;
+}
+.title.flex img, .title.flex .mail {
+    margin: 77px 0 157px 0;
+}
+.my-dream {
+    font-size: 80px;
+    margin-bottom: 49px;
+}
+.dream .flex img {
+    margin-right: 27px;
+    width: 73px;
+    margin-bottom: 40px;
+}
+.future {
+    padding: 26px;
+}
+.future p {
+    margin: 8px 0;
+}
+.dream .future {
+    max-width: 499px;
+    width: 100%;
+
+    background: #0E20BF;
+}
+.dream .future h4 {
+    font-weight: 700;
+    font-size: 18px;
+}
+.dream .future p {
+    line-height: 132.9%;
+    margin-bottom: 0;
+}
+.dreams {
+    padding-bottom: 176px;
+}
+table {
+    width: 100%;
+    border-collapse:collapse;
+}
+.background {
+    background: #E8E8E8 ;
+    padding: 13px;
+}
+td  {
+    border: 1px solid black;
+    padding: 12px;
+    text-align: center;
+    width: 250px;
+
+
+
+
+}
+.need .container {
+    margin: 128px auto;
+}
+.need .container h2, .target .container h2 {
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 142.4%;
+}
+.target .container h2 {
+    margin-bottom: 72px;
+}
+
+.proverca {
+    /*width: 273px;*/
+    /*height: 348px;*/
+    background: white;
+    max-width: 213px;
+    width: 100%;
+
+    text-align: center;
+
+    margin: 0;
+}
+.circle-block {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin: auto auto;
+}
+.osobenniy {
+    padding: 10px;
+    font-weight: 700;
+    font-size: 15px;
+    color: #fff;
+
+}
+.provercaWWW {
+    max-width: 273px;
+    width: 100%;
+    margin-right: 16px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+    padding: 125px 30px;
+}
+.ggg {
+    margin: 0;
+}
+.text {
+    margin-top: 16px;
+}
+.target {
+    margin: 128px;
+}
+
