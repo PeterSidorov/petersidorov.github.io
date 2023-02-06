@@ -148,4 +148,11 @@ td  {
 .target {
     margin: 128px;
 }
+/*Просто проверял  (понимаю что так нельзя делать просто :nth-child(4) познакомился с такой штукой)*/
+.blocks.container.flex div:nth-child(4) .proverca .circle-block p {
+    padding: 10px;
+    font-weight: 700;
+    font-size: 15px;
+    color: #fff;
 
+}
