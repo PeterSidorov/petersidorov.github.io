@@ -28,3 +28,6 @@
 
     background: orange url('../img/testImg.png') no-repeat center top / contain;
 }
+td{
+    border: 1px solid black;
+}
