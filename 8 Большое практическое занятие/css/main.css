@@ -1,0 +1,327 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #999999;
+}
+* {
+    box-sizing: border-box;
+}
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h3, h4, h5 h6 {
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+    line-height: 1.46em;
+    color: #323232;
+}
+p {
+    margin: 0;
+    line-height: 1.58em;
+}
+
+.container {
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+}
+.container_flex {
+    display: flex;
+    align-items: center;
+    /* Делает элементы на одной высоте
+    align-items: center; */
+}
+a {
+    text-decoration: none;
+    color: #4985FF;
+}
+
+.btn {
+    padding: 14px 0;
+    background: #4985FF;
+    border-radius: 30px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    max-width: 200px;
+    width: 100%;
+    text-align: center;
+    transition: all 1s ease;
+}
+.btn:hover {
+    background: #2C7;
+}
+.section-title {
+    font-size: 36px;
+    padding-top: 100px;
+    text-align: center;
+    margin: 0 auto 32px;
+}
+.paragraph {
+    font-weight: 300;
+}
+/* Первая секция */
+.header {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../img/header-bg.jpg') no-repeat center top / cover;
+    text-align: center;
+    color: #FFFFFF;
+    padding-bottom: 335px;
+}
+.nav {
+    border-bottom: 1px solid #A1A1A1;
+}
+.logo {
+    background: url("../img/logo.svg");
+    width: 104px;
+    height: 16px;
+    display: block;
+}
+.menu__list {
+    display: flex;
+}
+.menu {
+    margin-left: auto;
+}
+.menu__item a {
+    color: white;
+    font-size: 16px;
+    padding: 40px 20px;
+    display: block;
+    border-bottom: 2px solid rgba(255,255,255,0.0);
+}
+.menu__item a:hover {
+    border-bottom: 2px solid white;
+}
+.offer {
+    max-width: 875px;
+    width: 100%;
+    margin: 220px auto 0;
+}
+.offer__title {
+    color: white;
+    font-size: 48px;
+    margin-top: 14px;
+    margin-bottom: 50px;
+}
+.offer__btn {
+    margin: 0 auto;
+}
+/* Направления */
+.branches {
+    padding-bottom: 105px;
+}
+.section-title_branches {
+    padding-top: 110px;
+    width: 739px;
+
+}
+.branches-text {
+    width: 730px;
+    text-align: center;
+    margin: 0 auto;
+}
+.services__wrapper {
+    margin-top: 45px;
+}
+.services {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-bottom: 46px;
+}
+.services__img {
+    width: 110px;
+    margin-right: 17px;
+}
+.services__item {
+    display: flex;
+    width: 353px;
+    align-items: flex-start;
+}
+.services__title {
+    margin-bottom: 8px;
+}
+.services__text {
+    font-size: 14px;
+}
+.btn_branches {
+    margin: 0 auto;
+}
+/* Стандарты */
+.standards {
+    background: #F6F6F6;
+    padding: 100px 0 0;
+}
+.standards-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.standards-wrapper__content {
+    width: 496px;
+}
+.standards-wrapper__title {
+    text-align: left;
+    margin-bottom: 22px;
+    padding: 0;
+}
+.standards-wrapper__text {
+    margin-bottom: 20px;
+}
+.standards-wrapper__img img {
+    border-radius: 30px;
+}
+.achievements {
+    border-top: 1px solid #E0E0E0;
+    margin-top: 90px;
+    padding: 70px 94px 59px;
+    display: flex;
+    justify-content: center;
+}
+.achievements__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.achievements__items {
+    margin-right: 100px;
+}
+.achievements__items:last-child {
+    margin-right: 0;
+}
+.achievements__digit {
+    color: black;
+    font-size: 36px;
+}
+/* Портфолио */
+.portfolio-text {
+    width: 730px;
+    text-align: center;
+    margin: 0 auto 60px;
+}
+.works {
+    display: flex;
+    justify-content: space-between;
+}
+.btn_portfolio {
+    margin: 50px auto 140px;
+}
+/*  Видео */
+.video {
+    background: url("../img/video-bg.jpg") no-repeat center top / cover;
+    color: white;
+    height: 570px;
+}
+.video-text {
+    text-align: center;
+    margin: 0 auto;
+}
+.section-title_video {
+    color: #fff;
+}
+.video-frame {
+    display: block;
+    width: 970px;
+    height: 430px;
+    margin: 59px auto 0;
+    border-radius: 10px;
+}
+
+
+/* Subscription */
+.subscription {
+    margin-top: 200px;
+}
+.subscribe {
+    border-top: 1px solid #E0E0E0;
+    padding: 85px 0;
+    text-align: center;
+}
+.subscribe__title {
+    margin-bottom: 10px;
+    color: black;
+}
+.subscribe__text {
+    margin-bottom: 19px;
+    font-weight: 400;
+    font-size: 16px;
+}
+.subscribe__form {
+    display: flex;
+    width: 490px;
+    margin: 0 auto;
+}
+.subscribe__input {
+    background: white;
+    border: 1px solid #F2F2F2;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px rgb(111 111 111 / 25%);
+    border-radius: 30px 0 0 30px;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    width: 299px;
+    padding-left: 33px;
+}
+.subscribe__btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 30px 30px 0;
+}
+.subscribe__policy {
+    margin-top: 35px;
+    font-size: 13px;
+}
+/* Футер */
+.footer {
+    background: #F6F6F8;
+    padding: 70px 0 0 0;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-content__list {
+    margin-top: 25px;
+}
+.footer-content__list-item {
+    margin-bottom: 21px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+.footer-content__list-item a {
+    color: #999999;
+    display: flex;
+}
+.footer-content__icon {
+    margin-right: 15px;
+}
+
+.footer-content__list-item_arrow:before {
+    content: '';
+    display: block;
+    background: url("../img/arrow.svg") no-repeat center center ;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
+
+.footer-credits {
+    margin-top: 60px;
+    padding:30px 0;
+    border-top: 1px solid #E0E0E0;
+}
+.footer-credits__text {
+    font-size: 13px;
+    text-align: center;
+}

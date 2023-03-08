@@ -1,0 +1,259 @@
+/* Спецификация */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #304041;
+    letter-spacing: 0.05em;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+a {
+    text-decoration: none;
+}
+p {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.05em;
+}
+
+section {
+    padding-top: 145px;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+}
+.section-title {
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 0.05em;
+    text-align: center;
+}
+
+/* Первая секция */
+.header {
+    background: linear-gradient(180deg, rgba(121, 181, 196, 0) 1.39%, rgba(19, 75, 85, 0.26) 44.44%), url('../img/federico-di-dio-photography-Q4g0Q-eVVEg-unsplash.jpg') no-repeat center top / cover;
+
+    padding: 90px 0 80px;
+    color: #fff;
+    text-align: center;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+}
+.logo__img {
+    margin-right: 9px;
+}
+.logo__text {
+    font-size: 22px;
+    line-height: 1.6em;
+    color: #FFFFFF;
+}
+.offer {
+    margin-top: 201px;
+}
+.offer__title__small {
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 1.125em;
+    color: #000000;
+    background: #ffffff;
+    max-width: 239px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 8px 0;
+    border-radius: 78px;
+    letter-spacing: 0.05em;
+    display: inline-block;
+    text-transform: uppercase;
+}
+.offer__title {
+    margin-top: 24px;
+    font-size: 60px;
+    line-height: 73px;
+    text-align: center;
+    letter-spacing: 0.145em;
+}
+.offer__text {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    font-size: 20px;
+    line-height: 24px;
+}
+.offer__btn {
+    display: block;
+    letter-spacing: 0.05em;
+    padding: 18px 0;
+    background: #FF7E36;
+    max-width: 247px;
+    margin: 0 auto;
+    width: 100%;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    border-radius: 119px;
+    transition: all 1s ease;
+}
+.offer__btn:hover {
+    color: #FF7E36;
+    background: #fff;
+}
+.arrow__down {
+    background: url("../img/arrow-down.svg");
+    width: 18px;
+    height: 27px;
+    display: block;
+    margin: 217px auto 0;
+    transition: all 1s ease;
+    opacity: 0.5;
+}
+.arrow__down:hover {
+    opacity: 1;
+}
+/* Вторая секция */
+
+.wrapper {
+    display: flex;
+    background: #FFF6F1;
+    margin-top: 100px;
+    margin-bottom: 90px;
+    justify-content: space-between;
+}
+.destinations-info {
+    padding: 112px 71px;
+}
+.destinations-info__text-number {
+    font-weight: 500;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #789AA0;
+    display: inline-block;
+}
+
+.destinations-info__title {
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 20px;
+}
+.destinations-info__block {
+    margin-top: 40px;
+    margin-bottom: 47px;
+}
+.destinations-info__block__text {
+    font-size: 15px;
+    line-height: 23px;
+
+}
+.destinations-info__block__text:not(:last-child){
+    margin-bottom: 20px;
+}
+.destinations-info__arrow-next img {
+    width: 68px;
+    height: 17px;
+    opacity: 0.5;
+    transition: all 1s ease;
+    cursor: pointer;
+
+}
+.destinations-info__arrow-next img:hover {
+    opacity: 1;
+}
+
+.destinations-img {
+    filter: drop-shadow(0px 25px 70px rgba(4, 43, 55, 0.28));
+    border-radius: 0px 5px 5px 0px;
+
+}
+.destinations-img img {
+    width: 476px;
+    display: block;
+}
+.btn__ghost {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FF7E36;
+    border: 1px solid #FF7E36;
+    display: block;
+    padding: 18px 0;
+    max-width: 332px;
+    width: 100%;
+    border-radius: 94px;
+    margin: 0 auto;
+    transition: all 1s ease;
+}
+.btn__ghost:hover {
+    background: #FF7E36;
+    color: white;
+}
+
+/* Третья секция */
+
+
+
+.possibilities-content {
+    background: url("../img/daniele-tofani-Cv0x2GDrJf4-unsplash.jpg") no-repeat right / 50%;
+    padding: 150px 0;
+    margin-top: 93px;
+}
+.possibilities-content__item {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    max-width: 407px;
+    width: 100%;
+}
+.possibilities-content__item:not(:last-child) {
+    margin-bottom: 61px;
+}
+.possibilities-content__item:before {
+    content: '';
+    display: block;
+    width: 65px;
+    height: 7px;
+    background: #4EB1B6;
+    border-radius: 23px;
+    margin-bottom: 15px;
+}
+/* Footer */
+.footer {
+    padding: 147px 0 165px;
+}
+.footer-content {
+    display: flex;
+
+}
+.footer-content__text:first-child {
+    margin-right: 60px;
+}
+.footer-content__text {
+    font-size: 14px;
+    line-height: 17px;
+    color: #5C7677;
+}
+
+
