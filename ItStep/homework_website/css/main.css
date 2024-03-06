@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: lightgray;
+}
+* {
+    box-sizing: border-box;
+}
+ul, li {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h3, h4, h5 h6 {
+    padding: 0;
+    margin: 0;
+}
+p {
+    margin: 0;
+}
+.container {
+    max-width:1140px;
+    width: 100%;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+.flex {
+    display: flex;
+}
+/**/
+.menu {
+    background: #a23646;
+}
+.navbar-item {
+    padding: 20px 20px;
+    cursor: pointer;
+}
+.navbar-item:first-child{
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-left: 0;
+    margin-right: 50px;
+}
+.navbar-item:hover {
+    background: #912f3e;
+    transition: 1.5s;
+}
+.navbar-item a {
+    color: white;
+}
+/**/
+.name {
+    padding: 20px 0;
+    border-bottom: 1px solid grey;
+}
+.title {
+    padding: 15px 0;
+    font-size: 15px;
+}
+.container-William-Shakespeare-text {
+    width: 70%;
+}
+.container-William-Shakespeare-photo-and-information {
+    width: 30%;
+    padding: 20px;
+    background: #e6e7e7;
+    margin: 30px 0 30px 30px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+}
+.photo-William-Shakespeare {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+.first-item {
+    font-weight: 700;
+    padding: 10px 10px;
+}
+.first-item:last-child {
+    padding-top: 45px;
+}
+.second-item {
+    padding: 10px 10px;
+}
+/**/
+.text-similar-authors {
+    padding: 20px;
+}
+.photos {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+.container-photos {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.7);
+    height: 65%;
+    padding: 25px 25px 25px 25px;
+    margin-bottom: 100px;
+}
+.container-photo {
+    width: 20%;
+    height: 240px;
+    text-align: center;
+}
+.container-photo:not(:first-child) {
+    padding-left: 25px;
+}
+.container-photo p {
+    padding-top: 15px;
+}

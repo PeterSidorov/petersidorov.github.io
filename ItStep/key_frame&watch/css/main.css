@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h3, h4, h5 h6 {
+    padding: 0;
+    margin: 0;
+}
+p {
+    margin: 0;
+}
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    background: lightcyan;
+    padding: 20px 10px 10px 10px;
+}
+a {
+    text-decoration: none;
+}
+/**/
+.circle {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 5px lightgreen solid;
+    margin: 0 auto;
+    padding-top: 248px;
+}
+.second_arrow {
+    width: 220px;
+    border: 2px lightgreen solid;
+    margin-left: 30px;
+    animation-name: start;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: 100%;
+}
+.first_arrow {
+    width: 150px;
+    border: 2px lightgreen solid;
+    margin-left: 100px;
+    animation-name: start;
+    animation-duration: 200s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: 100%;
+}
+
+@keyframes start {
+    0% {
+        transform: rotate(90deg);
+    }
+    100% {
+        transform: rotate(450deg);
+    }
+}
+/*
+------------------------------------------------------------------------------------------------------------------------
+
+animation-name: имя
+
+animation-iteration-count: определяет сколько раз будет проигрываться анимационный цикл, перед тем как остановиться.
+
+animation-duration: устанавливает длительность анимации во времени за один цикл.
+
+------------------------------------------------------------------------------------------------------------------------
+
+animation-timing-function: задаёт как происходит анимация в течении длительности каждого цикла.
+
+animation-delay: определяет время задержки перед стартом анимации.
+
+animation-direction: определяет, должна ли анимация воспроизводиться вперёд, назад или переменно вперёд и назад.
+
+animation-fill-mode: определяет, как нужно применять стили к объекту анимации до и после её выполнения.
+
+------------------------------------------------------------------------------------------------------------------------
+*/
