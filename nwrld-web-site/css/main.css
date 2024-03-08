@@ -3,7 +3,9 @@ body {
     padding: 0;
     text-transform: uppercase;
     color: white;
+    font-family: "JetBrains Mono", monospace;
 }
+
 * {
     box-sizing: border-box;
 }
@@ -15,7 +17,6 @@ ul, li {
 h1, h2, h3, h4, h5 h6 {
     padding: 0;
     margin: 0;
-    font-weight: 500;
     line-height: 1.46em;
 }
 p {
@@ -76,4 +77,16 @@ a {
 .intro__title {
     font-size: 45px;
     text-align: center;
+    font-weight: 700;
+}
+.menu {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+.nav {
+    display: flex;
 }

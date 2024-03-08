@@ -51,21 +51,25 @@ console.log(user);
 console.log(userCopy);
 */
 
-// function sum(a,b) {
-//     const c = a + b
-//     console.log(c)
-// }
-//
-// sum(12,8);
 
-
-
-
+/*
 function myFn (a,b) {
-    let c;
-    a = a + 1;
-    c = a + b;
-    return c;
+
+}
+ */
+
+const personOne= {
+    name: 'Bob',
+    age: 23
 }
 
-console.log(myFn(10,25));
+function increasePersonAge (person) {
+
+    const updatePerson = JSON.parse(JSON.stringify(personOne));
+    updatePerson.age += 7;
+    return updatePerson
+}
+const updatePersonOne = increasePersonAge(personOne);
+
+console.log(personOne.age);
+console.log(updatePersonOne.age);
