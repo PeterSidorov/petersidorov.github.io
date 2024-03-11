@@ -41,9 +41,6 @@ body {
     will-change: transform;
     transition: transform var(--transition);
 }
-.video__media {
-    height: 100vh;
-}
 .layers__item {
     position: absolute;
     inset: -5vw;
