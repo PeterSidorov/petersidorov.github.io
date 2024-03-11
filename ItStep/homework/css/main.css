@@ -69,8 +69,17 @@ a {
     padding: 6px 20px;
     background: #2f4173;
     border:none;
+    color: white;
 }
 .downloads .container {
     padding: 20px;
     background: lightyellow;
+}
+.title {
+    bottom: -30px;
+    position: relative;
+}
+.small-text {
+    bottom: -55px;
+    position: relative;
 }
