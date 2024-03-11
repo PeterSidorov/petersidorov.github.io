@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h3, h4, h5 h6 {
+    padding: 0;
+    margin: 0;
+}
+p {
+    padding: 0;
+    margin: 0;
+}
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+
+.main__zagruzka {
+    border: 2px grey solid;
+    display: flex;
+    padding: 20px;
+    max-width: 896px;
+    width: 100%;
+    margin: 0 auto;
+}
+.main__content {
+    display: flex;
+}
+.content-left {
+    display: flex;
+}
+.photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 7px solid black;
+}
+.grey {
+    background: grey;
+    padding: 15px 80px;
+    margin-right: 20px;
+}
+
+.content-left {
+    border: 1px grey solid;
+}
+.start {
+    padding: 5px 60px 2px 15px;
+    background: grey;
+}
+.finish {
+    background: white;
+    padding: 5px 15px 2px 100px;
+}
+.btn {
+    margin-left: 20px;
+    padding: 6px 20px;
+    background: #2f4173;
+    border:none;
+}
+.downloads .container {
+    padding: 20px;
+    background: lightyellow;
+}

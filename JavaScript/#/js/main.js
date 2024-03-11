@@ -57,7 +57,7 @@ function myFn (a,b) {
 
 }
  */
-
+/*
 const personOne= {
     name: 'Bob',
     age: 23
@@ -73,3 +73,10 @@ const updatePersonOne = increasePersonAge(personOne);
 
 console.log(personOne.age);
 console.log(updatePersonOne.age);
+ */
+
+function printMyName (a) {
+    console.log(a)
+}
+
+setTimeout(printMyName('Peter'), 2000);
