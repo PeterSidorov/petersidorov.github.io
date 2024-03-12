@@ -93,6 +93,23 @@ a {
     text-align: center;
     font-weight: 500;
 }
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+.btn {
+    margin: 20px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 15px 40px;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 50px;
+    border: rgb(255 255 255 / .4) 1px solid;
+    outline: none;
+    cursor: pointer;
+}
 /*
 .tor {
     position: absolute;
