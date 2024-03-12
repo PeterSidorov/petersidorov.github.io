@@ -55,6 +55,7 @@ a {
     left: 0;
 }
 .intro {
+    overflow: hidden;
     position: relative;
     height: 100vh;
 }
