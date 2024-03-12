@@ -44,15 +44,15 @@ a {
     z-index: 2;
 }
 .video {
-    /*position: relative;*/
-    /*padding-bottom: 56.25%;*/
+    position: relative;
+    padding-bottom: 56.25%;
 }
 .video-media {
     width: 100%;
     height: auto;
-    /*position: absolute;*/
-    /*top: 0;*/
-    /*left: 0;*/
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .intro {
     position: relative;
