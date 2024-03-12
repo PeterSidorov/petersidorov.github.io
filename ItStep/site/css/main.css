@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+* {
+    box-sizing: border-box;
+}
+ul, li {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h3, h4, h5 h6 {
+    padding: 0;
+    margin: 0;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+.cat {
+    margin: 20px 0;
+}
+.images {
+    float: right;
+    max-width: 32%;
+    width: 100%;
+}
+.margin__p {
+    width: 61%;
+}
+.margin__p:nth-of-type(1) {
+    margin-bottom: 50px;
+}
+.margin__p:nth-of-type(3) {
+    margin: 20px 0 40px 0;
+}
+
+.container__img {
+    background: #37506d;
+    border-radius: 15px;
+}
+.container__img:first-child {
+    margin-bottom: 20px;
+}
+.img__cat {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.background__color {
+    background: lightyellow;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+.text__cat {
+    text-align: right;
+    margin-left: auto;
+    max-width: 237px;
+    width: 100%;
+    font-size: 14px;
+    color: white;
+    padding: 10px 20px 10px 0 ;
+}
+
+@media screen and (max-width: 1000px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+    .cat {
+        order: 1;
+    }
+    /*.margin__p:nth-child(1) {*/
+    /*    order: 2;*/
+    /*}*/
+    .margin__p:nth-of-type(1) {
+        order: 2;
+    }
+    .margin__p:nth-of-type(2) {
+        order: 4;
+    }
+    .margin__p:nth-of-type(3) {
+        order: 5;
+    }
+    .container {
+        max-width: 717px;
+    }
+    .images {
+        order: 3;
+    }
+    .images {
+        float: none;
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .margin__p:nth-of-type(1n) {
+        margin: 20px 0;
+        width: 100%;
+    }
+    .container__img {
+        width: 49%;
+    }
+    .container__img:first-child {
+        margin-bottom: 0;
+        height: 90%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .images {
+        flex-direction: column;
+    }
+    .container__img {
+        width: 100%;
+    }
+    .container__img:first-of-type {
+        margin-bottom: 20px;
+    }
+    .text__cat {
+        max-width: 400px;
+    }
+}
