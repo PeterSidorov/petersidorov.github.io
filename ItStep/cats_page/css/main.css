@@ -29,6 +29,7 @@ a {
 }
 .cat {
     margin: 20px 0;
+    color: rgba(0, 1, 1, 0.5);
 }
 .images {
     float: right;
@@ -37,6 +38,7 @@ a {
 }
 .margin__p {
     width: 61%;
+    color: rgba(0, 1, 1, 0.5);
 }
 .margin__p:nth-of-type(1) {
     margin-bottom: 50px;
@@ -74,38 +76,49 @@ a {
     color: white;
     padding: 10px 20px 10px 0 ;
 }
-
+.title-flex__cat {
+    text-align: center;
+    max-width: 61%;
+    font-size: 30px;
+    color: black;
+    font-weight: 900;
+    border: 1px solid green;
+    border-radius: 50px;
+}
 @media screen and (max-width: 1000px) {
     .content {
         display: flex;
         flex-direction: column;
     }
-    .cat {
+    .title-flex__cat {
         order: 1;
     }
-    /*.margin__p:nth-child(1) {*/
-    /*    order: 2;*/
-    /*}*/
-    .margin__p:nth-of-type(1) {
+    .cat {
         order: 2;
     }
-    .margin__p:nth-of-type(2) {
+    .margin__p:nth-of-type(1n) {
+        display: none;
+    }
+    .images {
         order: 4;
     }
-    .margin__p:nth-of-type(3) {
+    .margin__p:nth-of-type(2) {
         order: 5;
+    }
+    .margin__p:nth-of-type(3) {
+        order: 6;
     }
     .container {
         max-width: 717px;
-    }
-    .images {
-        order: 3;
     }
     .images {
         float: none;
         max-width: 100%;
         display: flex;
         justify-content: space-between;
+    }
+    .title-flex__cat {
+        max-width: 100%;
     }
     .margin__p:nth-of-type(1n) {
         margin: 20px 0;
@@ -132,4 +145,48 @@ a {
     .text__cat {
         max-width: 400px;
     }
+}
+.window.active {
+    display: none;
+}
+.window {
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    overflow: auto;
+}
+.window__content {
+    max-width: 400px;
+    width: 100%;
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+}
+.modal__text:first-of-type {
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px black solid;
+}
+.modal__btn {
+    border: none;
+    background: none;
+    float: right;
+    cursor: pointer;
+    color: red;
+}
+#catImg {
+    cursor: pointer;
+}
+
+.color-text {
+    text-transform: uppercase;
+    color: green;
 }
