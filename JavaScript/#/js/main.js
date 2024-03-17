@@ -74,9 +74,22 @@ const updatePersonOne = increasePersonAge(personOne);
 console.log(personOne.age);
 console.log(updatePersonOne.age);
  */
-
+/*
 function printMyName (a) {
     console.log(a)
 }
+setTimeout(printMyName('Peter'), 2000); //Задержда перед выполнением
+ */
+const button = {
+    width: 200,
+    text: 'Buy',
+    color: 'black'
+}
+console.table(button);
 
-setTimeout(printMyName('Peter'), 2000);
+const redButton = {
+    ...button, //Берет старый обьект и к нему добавляет новые значения
+    color: 'red'
+}
+
+console.table(redButton);
