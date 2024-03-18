@@ -43,15 +43,22 @@ a {
 }
 .items {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .item {
     width: 100px;
     height: 100px;
     background-color: #00b9eb;
-    margin-right: 15px;
     border-radius: 20px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
+    display: none;
+    overflow:hidden;
+}
+.displayActive {
+    display: block;
+    justify-content: center;
+}
+.item_text {
     justify-content: center;
 }

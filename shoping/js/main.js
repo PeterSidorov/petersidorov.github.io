@@ -1,7 +1,9 @@
 const list = document.getElementById('list');
 // const str = document.getElementById('str'); // str.innerHTML="Ваш список продуктов: "+val; // Показать список продуктов
 const btn = document.getElementById('btn');
+let items = document.querySelectorAll('.item');
 let itemsText = document.querySelectorAll('.item_text');
+
 /**/
 
 /**/
@@ -24,7 +26,13 @@ btn.addEventListener('click', function () {
 
     for (let a=0; a < newVal.length;a++) {
         itemsText[a].innerHTML = "" + newVal[a];
+
+        if (typeof itemsText[a] === 'object') {
+            items[a].classList.add('displayActive')
+        }
+
     }
+    console.log( itemsText[0]);
 })
 
  // Показать список продуктов
