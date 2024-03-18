@@ -40,7 +40,7 @@ btn.addEventListener('click', function () {
 
 function clickRemoveActive (favicon) {
     for (let a=0;a<100;a++) {
-        favicon[a].addEventListener( "click", function (){
+        favicon[a].addEventListener( "dblclick", function (){
             console.log('hello', a)
             favicon[a].classList.remove('displayActive');
         })
