@@ -1,5 +1,4 @@
 const list = document.getElementById('list');
-// const str = document.getElementById('str'); // str.innerHTML="Ваш список продуктов: "+val; // Показать список продуктов
 const btn = document.getElementById('btn');
 let items = document.querySelectorAll('.item');
 let itemsText = document.querySelectorAll('.item_text');
@@ -15,24 +14,30 @@ list.addEventListener( 'input', function () {
 let val; // Список
 let newVal; // Массив из списка
 
-console.log(list.value)
-
-
-btn.addEventListener('click', function () {
+function main () {
     val = list.value;
-    console.log(val);
     newVal = val.split('\n'); //Делит список продуктов на массив
-    console.log(newVal); //Показывает массив
-
     for (let a=0; a < newVal.length;a++) {
         itemsText[a].innerHTML = "" + newVal[a];
-
-        if (typeof itemsText[a] === 'object') {
-            items[a].classList.add('displayActive')
-        }
-
+        items[a].classList.add('displayActive')
     }
-    console.log( itemsText[0]);
+}
+
+btn.addEventListener('click', function () {
+
+
+    for (let a=0; a < 100;a++) {
+        items[a].classList.remove('displayActive')
+        console.log(a);
+    }
+    main();
+    console.log('Finish');
+    console.log(newVal);
+    for (let a=0; a < 100;a++) {
+        if (newVal[a] === "") {
+            items[a].classList.remove('displayActive')
+        }
+    }
 })
 
  // Показать список продуктов
