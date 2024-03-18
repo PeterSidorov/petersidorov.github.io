@@ -28,11 +28,8 @@ btn.addEventListener('click', function () {
 
     for (let a=0; a < 100;a++) {
         items[a].classList.remove('displayActive')
-        console.log(a);
     }
     main();
-    console.log('Finish');
-    console.log(newVal);
     for (let a=0; a < 100;a++) {
         if (newVal[a] === "") {
             items[a].classList.remove('displayActive')
@@ -40,11 +37,17 @@ btn.addEventListener('click', function () {
     }
 })
 
- // Показать список продуктов
 
+function clickRemoveActive (favicon) {
+    for (let a=0;a<100;a++) {
+        favicon[a].addEventListener( "click", function (){
+            console.log('hello', a)
+            favicon[a].classList.remove('displayActive');
+        })
+    }
+}
 
-
-
+clickRemoveActive(items);
 
 
 
