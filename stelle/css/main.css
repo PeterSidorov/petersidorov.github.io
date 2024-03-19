@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background: black;
 }
 * {
     box-sizing: border-box;
@@ -42,18 +43,9 @@ a {
     top: 0;
     left: 0;
     z-index: 2;
+
 }
-.video {
-    position: relative;
-    padding-bottom: 56.25%;
-}
-.video-media {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
+
 .intro {
     position: relative;
 }
