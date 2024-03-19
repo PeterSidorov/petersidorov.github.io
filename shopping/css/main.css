@@ -62,30 +62,34 @@ a {
 }
 /* List block */
 .items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    justify-items: center;
+    text-align: center;
 }
+
 .item {
     border-radius: 20px;
-    text-align: center;
+    padding: 0 10px;
     display: none;
     overflow:hidden;
-
+    cursor: pointer;
 }
 .block__img {
     width: 100px;
     height: 100px;
+    margin: 0 auto;
     border-radius: 20px;
     background: white;
 }
+.item_text {
+    /*justify-content: center;*/
+    /*max-width: 100px;*/
+    /*width: 100%;*/
+    color: white;
+}
 .displayActive {
     display: block;
-    justify-content: center;
-}
-.item_text {
-    justify-content: center;
-    max-width: 100px;
-    width: 100%;
-    color: white;
+    /*justify-content: center;*/
 }
