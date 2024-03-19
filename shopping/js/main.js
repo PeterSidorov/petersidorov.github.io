@@ -1,5 +1,6 @@
 const list = document.getElementById('list');
 const btn = document.getElementById('btn');
+const modalWindow = document.getElementById('modal-window');
 let items = document.querySelectorAll('.item');
 let itemsText = document.querySelectorAll('.item_text');
 
@@ -21,10 +22,14 @@ function main () {
         itemsText[a].innerHTML = "" + newVal[a];
         items[a].classList.add('displayActive')
     }
+    if (newVal[0] === "") {
+        console.log('гы гы гы')
+    }
 }
 
-btn.addEventListener('click', function () {
 
+
+btn.addEventListener('click', function () {
 
     for (let a=0; a < 100;a++) {
         items[a].classList.remove('displayActive')
@@ -35,19 +40,25 @@ btn.addEventListener('click', function () {
             items[a].classList.remove('displayActive')
         }
     }
+    if (newVal[0] === "") {
+        console.log('Список должен содержать хотя бы один продукт')
+    } else {
+        modalWindow.classList.add('close')
+    }
 })
 
 
 function clickRemoveActive (favicon) {
     for (let a=0;a<100;a++) {
         favicon[a].addEventListener( "dblclick", function (){
-            console.log('hello', a)
+            // console.log('hello', a)
             favicon[a].classList.remove('displayActive');
         })
     }
 }
 
 clickRemoveActive(items);
+
 
 
 
