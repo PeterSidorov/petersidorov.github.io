@@ -32,7 +32,6 @@ a {
     max-width: 1140px;
     width: 100%;
     margin: 0 auto;
-    background: turquoise;
 }
 /* Header */
 .menu {
@@ -45,7 +44,6 @@ a {
     padding: 10px;
     margin: 20px auto;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.7);
-
 }
 .bnt {
     max-width: 96%;
