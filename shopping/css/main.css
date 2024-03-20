@@ -39,14 +39,15 @@ a {
     flex-direction: column;
 }
 .list {
-    max-width: 96%;
+    max-width: 100%;
     width: 100%;
     padding: 10px;
     margin: 20px auto;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.7);
 }
 .bnt {
-    max-width: 96%;
+    font-size: 17px;
+    max-width: 100%;
     width: 100%;
     padding: 20px 0;
     align-self: flex-start;
@@ -57,6 +58,12 @@ a {
     cursor: pointer;
     color: white;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.7);
+    transition: 0.7s;
+}
+.bnt:hover {
+    background-color: white;
+    border: 1px solid #8eec8f;
+    color: #8eec8f;
 }
 /* List block */
 .items {
