@@ -91,3 +91,21 @@ a {
     display: block;
     /*justify-content: center;*/
 }
+.congratulation-block.displayNone {
+    display: none;
+}
+.congratulation-block__main-text {
+    padding-top: 100px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+.repeat__list {
+    text-align: center;
+    margin-top: 20px;
+}
+.repeat__item {
+    color: white;
+    font-size: 20px;
+}
