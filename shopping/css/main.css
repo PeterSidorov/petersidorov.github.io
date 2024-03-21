@@ -168,3 +168,9 @@ a {
         font-size: 16px;
     }
 }
+@media screen and (max-width: 500px) {
+    .block__img {
+        width: 90px;
+        height: 90px;
+    }
+}
