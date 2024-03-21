@@ -107,17 +107,3 @@ for (let a = 0; a<100; a++) {
     })
 }
 
-
-/*
-if (val === "") {
-        console.log('Список должен содержать хотя бы один продукт')
-    } else {
-        modalWindow.classList.add('close')
-        console.log(newVal)
-        console.log(newVal.join(''))
-    }
- */
-
-/* Проверяет textarea на наличие текста
-       Если в textarea пусто, пишет в консоль что нужно добавить продукты,
-       если текст есть, закрывает модальное окно */
