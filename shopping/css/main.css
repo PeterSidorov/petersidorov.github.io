@@ -169,6 +169,9 @@ a {
     }
 }
 @media screen and (max-width: 500px) {
+    .congratulation-block__main-text {
+        text-align: center;
+    }
     .block__img {
         width: 90px;
         height: 90px;
