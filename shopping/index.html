@@ -8,19 +8,31 @@
     <link rel="stylesheet" href="css/modal-window.css">
 </head>
 <body>
-<div class="width-auto"></div>
+
 <header class="header">
     <div id="modal-window" class="window">
         <div class="window__content">
+           <div class="content-l">
+               <div class="main-title">Приветствую, тут есть инструкция -></div>
+               <button class="bnt" id="btn-info" type="button">Info</button>
+           </div>
 
+            <div class="menu">
 
-                <div class="menu">
-                    <textarea rows="3" class="list" id="list" placeholder="Напишите сюда список продуктов"></textarea>
-                    <button class="bnt" id="btn" type="button">Пумс и меню с продуктами готово</button>
-                </div>
-
-
+                        <textarea rows="3" class="list" id="list" placeholder="Напишите сюда список продуктов"></textarea>
+                        <div class="buttons">
+                            <button class="bnt" id="btn" type="button">Пумс и меню с продуктами готово</button>
+                        </div>
+            </div>
         </div>
+        <div class="window__content">
+            <div class="content-example">
+                <p class="text-example">Пример списка:</p>
+                <img class="img-example" src="img/example.png" alt="#">
+            </div>
+        </div>
+
+
     </div>
 </header>
 <section class="list-block">
