@@ -101,8 +101,14 @@ for (let a = 0; a<100; a++) {
 
             filteredNewVal.forEach((book, i) => {
                 repeatList.innerHTML += `<li class="repeat__item">${i + 1} ${book}</li>`;
-            });
+            });/* forEach перебирает массив в список */
 
+            let repeatItem = document.querySelectorAll('.repeat__item');
+            for (let a=0;a<100;a++) {
+                repeatItem[a].addEventListener( "dblclick", function (){
+                    repeatItem[a].classList.toggle('lineThrough');
+                })
+            }
         }
     })
 }
