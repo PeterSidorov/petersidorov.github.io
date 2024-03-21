@@ -43,10 +43,6 @@ a {
     display: flex;
     flex-direction: column;
 }
-.list-block {
-    height: 100vh;
-    overflow: scroll;
-}
 .list {
     font-size: 16px;
     max-width: 100%;
