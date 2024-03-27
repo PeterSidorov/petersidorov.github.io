@@ -80,6 +80,7 @@ function printMyName (a) {
 }
 setTimeout(printMyName('Peter'), 2000); //Задержда перед выполнением
  */
+/*
 const button = {
     width: 200,
     text: 'Buy',
@@ -93,3 +94,30 @@ const redButton = {
 }
 
 console.table(redButton);
+ */
+/*
+let person = {
+    city: 'Kyiv',
+    years: 21,
+    name: 'Peter'
+}
+const myName = 'My name is';
+const anni = 'ho' + ' ' +person.years + ' ' + 'anni.';
+
+
+
+console.log(`${myName} ${person.name}, ${anni}`);
+ */
+
+
+
+const myFunction = (a,b) => {
+    let c;
+
+    a = a+1;
+    c= a+b;
+
+    return c;
+}
+
+console.log(myFunction(5,3))

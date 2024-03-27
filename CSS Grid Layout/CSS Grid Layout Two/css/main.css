@@ -24,12 +24,21 @@ p {
 a {
     text-decoration: none;
 }
-.container {
-    max-width: 800px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 50px;
-}
 /* GRID Layout - Определение сетки */
+.wrapper {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: minmax(100px, auto) 1fr minmax(70px, auto);
+    grid-template-areas:
+            "header"
+            "main"
+            "footer";
+}
 
-
+.header, .footer {
+    background: #8eec8f;
+}
+.header {
+    grid-area: header;
+    padding: 15px;
+}
