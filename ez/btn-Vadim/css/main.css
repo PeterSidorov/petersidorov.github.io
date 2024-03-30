@@ -1,0 +1,111 @@
+.form p {
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+}
+.form .form__text-active {
+    color: black;
+}
+.form__text-passive {
+    display: none;
+}
+
+.form.active .form__text-passive {
+    display: block;
+    color: green;
+}
+.form.active .form__text-active {
+    display: none;
+}
+
+
+
+
+a {
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    max-width: 389px;
+    width: 100%;
+    margin:0 auto ;
+}
+.buttons__btn {
+    max-width: 70px;
+    width: 100%;
+    padding: 20px 0;
+    margin-right: 7px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    transition: all 300ms;
+    border-radius: 10px;
+}
+.buttons__btn:first-child {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.buttons__btn:last-child {
+
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.buttons.loading .buttons__btn {
+    padding: 0;
+    margin: 0;
+    width: 0;
+}
+.buttons .buttons__btn.selected {
+    display: block;
+    padding: 20px 153px;
+    border-radius: 50px;
+}
+.buttons.loading.success .buttons__btn.selected {
+    color: black;
+    font-size: 45px;
+}
+
+
+
+.joke .joke__text {
+    display: none;
+}
+.joke.active .joke__text {
+    display: block;
+    padding: 30px;
+    width: 400px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    line-height: 10px;
+    background: peachpuff;
+    color: white;
+}
+.joke.active.color .joke__text {
+    display: block;
+    padding: 30px;
+    width: 400px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    line-height: 10px;
+    background: hotpink;
+    color: white;
+}
+.joke.active.colorr .joke__text {
+    display: block;
+    padding: 30px;
+    width: 400px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    line-height: 10px;
+    background: dodgerblue;
+    color: white;
+}
+
+

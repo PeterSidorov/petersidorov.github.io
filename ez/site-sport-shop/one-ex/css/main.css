@@ -1,0 +1,237 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #FAFAFA;
+}
+div, p, input, button, form, span, a, ul, li {
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    max-width: 1348px;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+}
+/*nnnnnnnnnnnnnnnnn*/
+
+
+.images.flex {
+    position: relative;
+    cursor: pointer;
+    color: #FC833F;
+}
+.images {
+    width: 58%;
+    background: white;
+    padding: 50px;
+
+}
+.heart .heartNonLike {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    font-size: 22px;
+    cursor: pointer;
+}
+.images.flex.active .heartNonLike {
+    display: none;
+}
+
+.images.flex.active .heartLike {
+    display: block;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    font-size: 29px;
+}
+.heart .heartLike {
+    display: none;
+    cursor: pointer;
+}
+
+
+
+
+/**/
+.images-box {
+    width: 25%;
+    height: 295px;
+    padding-left: 20px;
+}
+.images-box .image {
+    display: block;
+    height: 100px;
+    width: 100%;
+}
+.images-box .image img {
+    object-fit: contain;
+    width: 100%;
+    height: 97%;
+}
+.img-title {
+    width: 75%;
+    padding: 0 20px;
+}
+.big-img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.information {
+    width: 42%;
+    display: block;
+    padding: 20px 0 0 20px;
+}
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.partNumber, .text-colour, .text-size{
+    margin-top: 100px;
+    font-weight: 400;
+    font-size: 14px;
+    color: gray;
+}
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.actual-price, .discount {
+    color: #FC833F;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin: 0;
+}
+.discount {
+    margin-left: 10px;
+}
+.text-colour , .text-size {
+    margin: 0;
+}
+.price .flex {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.color {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.img.active {
+    border: 1px solid darkgray;
+}
+
+.color.active {
+    outline: 4px solid white;
+    outline-offset: -6px;
+}
+
+.text-table {
+    color: gray;
+    margin: 0 15px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.size {
+    margin-left: 50px;
+}
+.name {
+    max-width: 60px;
+    height: 30px;
+    margin-top: 20px;
+    margin-right: 15px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+}
+.btn {
+    padding: 16px 35px;
+    border: 1px solid #FC833F;
+    border-radius: 7px;
+    font-weight: bold;
+    cursor: pointer;
+    box-sizing: content-box;
+
+}
+.btn-add-card {
+    color: white;
+    background: #FC833F;
+}
+.btn-buy-click {
+    color: #FC833F;
+    background: white;
+    margin-left: 25px;
+}
+
+.tabs {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border: 2px solid #F0F0F0;
+    padding: 25px 0 25px 35px;
+}
+.tab-btn {
+    margin-left: 30px;
+    color: #707E8D;
+    cursor: pointer;
+}
+.tabs .tab-btn.active {
+    color: black;
+}
+.contents {
+    width: 100%;
+    color: #707E8D;
+}
+
+.content {
+    display: none;
+    border: 2px solid #F0F0F0;
+}
+
+.content.active {
+    display: block;
+}
+.accordion-cell {
+    border-bottom: 2px solid #F0F0F0;
+    cursor: pointer;
+    position: relative; /*Img flex*/
+}
+
+.accordion-cell .attribute-title {
+    color: black;
+    font-size: medium;
+    letter-spacing: 0.10em;
+}
+.arrow {
+    position: absolute;
+    right: 15px;
+    top: 27px;
+}
+.accordion-cell.active .arrow {
+    transform: rotate(180deg);
+}
+.group-title {
+    padding: 25px 0 25px 35px;
+    width: 100%;
+}
+.accordion-cell.active .group-title {
+    color: black;
+}
+.attribute {
+    display: none;
+    padding: 0 35px;
+}
+.accordion-cell.active .attribute {
+    display: block;
+}
+

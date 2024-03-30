@@ -1,0 +1,61 @@
+.product-card-mini .container {
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.065em;
+}
+.product-card-mini .container .product-card .blocks-product-card-mini.flex .block {
+    max-width: 315px;
+    width: 100%;
+    position: relative;
+
+}
+.product-card-mini .container .product-card .blocks-product-card-mini.flex .block.active .heartNonLike {
+    display: none;
+}
+
+.product-card-mini .container .product-card .blocks-product-card-mini.flex .block.active .heartLike {
+    display: block;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    font-size: 22px;
+}
+.product-card-mini .container .product-card .blocks-product-card-mini.flex {
+    justify-content: space-between;
+}
+.product-card-mini .container .product-card .title {
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 47px;
+}
+.product-card-mini .container .product-card .blocks-product-card-mini.flex .block .colors.flex .color:first-child {
+    margin-left: 0;
+}
+
+.product-card-mini .container .product-card .blocks-product-card-mini.flex .block .mini-menu .colors.flex .color {
+    width: 18px;
+    height: 18px;
+}
+.product-card-mini .container .product-card .blocks-product-card-mini.flex .block .mini-menu p {
+    color: #707E8D;
+    margin: 0;
+
+}
+.product-card-mini .container .product-card .blocks-product-card-mini.flex .block .mini-menu h4 {
+    margin-top: 22px;
+    margin-bottom: 14px;
+}
+.product-card-mini .container .product-card .blocks-product-card-mini.flex .block {
+    background: #fff;
+}
+.product-card-mini .container .product-card .blocks-product-card-mini.flex .block .mini-menu {
+    max-width: 186px;
+    width: 100%;
+    margin: 23px 94px 47px 33px;
+}
+
+.product-card-mini .container .product-card .blocks-product-card-mini.flex .block a img {
+    margin: 63px 39px 0 39px;
+}
