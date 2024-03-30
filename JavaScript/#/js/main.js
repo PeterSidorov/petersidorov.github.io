@@ -110,7 +110,7 @@ console.log(`${myName} ${person.name}, ${anni}`);
  */
 
 
-
+/*
 const myFunction = (a,b) => {
     let c;
 
@@ -121,3 +121,23 @@ const myFunction = (a,b) => {
 }
 
 console.log(myFunction(5,3))
+ */
+const multByFactor = (value, multiplier = 1) => {
+    return value * multiplier
+}
+
+console.log(multByFactor(4, 0));
+console.log(multByFactor(4));
+const firstPost = {
+    id: 1,
+    author: 'Bogdan',
+}
+
+const newPost = (post, addedAt = Date()) => {
+    return post = firstPost.addedAt
+
+}
+
+
+
+console.log(newPost(firstPost))

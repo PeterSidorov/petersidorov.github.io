@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h3, h4, h5 h6 {
+    padding: 0;
+    margin: 0;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+}
+/* Header */
+.modal__windowForm {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding-right: 20px;
+}
+.main__partForm {
+    background-color: #9fcccd;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 25px 20px 50px 0;
+    background-image: url("../img/moon_flag.png");
+    background-size: 35%;
+    background-repeat: no-repeat;
+    background-position: 101.8% 115%;
+}
+.part__left {
+    margin-top: 25px;
+}
+.form {
+    max-width: 320px;
+    padding: 0 25px;
+}
+.form p {
+    color: rgba(0,0,0, 0.5);
+}
+.input {
+    width: 100%;
+    background-color: #abd1d3;
+    padding: 10px 10px;
+    border: none;
+    border-bottom: 1px solid #517a7a ;
+}
+.input::placeholder {
+    color: #7da6a6;
+}
+.title {
+    background-color: #db6326;
+    max-width: 400px;
+    width: 100%;
+    padding: 7px 0 7px 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+}
+.text-start {
+    font-size: 13px;
+    padding: 20px 0 10px 0;
+}
+.part__bottom {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    align-items: end
+}
+.expiryDate, .cvv {
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+.cvv {
+    text-transform: uppercase;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <form class="form">
+            <div class="grid-form">
+                <div class="item__grid-form">
+                    <p class="item-grid">
+                        Registration form
+                    </p>
+                </div>
+                <div class="item__grid-form">
+                    <p class="item-grid">
+                        Personal details
+                    </p>
+                </div>
+                <div class="item__grid-form item__grid-form_flex">
+                    <div class="img__input">
+                        <img class="img" src="img/username.png" alt="#">
+                    </div>
+                    <input type="text" placeholder="Username">
+                </div>
+                <div class="item__grid-form">
+                    <input type="text" placeholder="First name">
+                </div>
+                <div class="item__grid-form">
+                    <input type="text" placeholder="Last name">
+                </div>
+                <div class="item__grid-form item__grid-form_flex">
+                    <div class="img__input">
+                        <img class="img" src="img/email.png" alt="#">
+                    </div>
+                    <input type="text" placeholder="Email address">
+                </div>
+                <div class="item__grid-form">
+                    <select name="user">
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                    </select>
+                </div>
+                <div class="item__grid-form">
+                    <input type="date" value="yyyy-mm-dd">
+                </div>
+                <div class="item__grid-form item__grid-form_flex">
+                    <div class="img__input">
+                        <img class="img" src="img/pswd.png" alt="#">
+                    </div>
+                    <input type="text" placeholder="Password">
+                </div>
+                <div class="item__grid-form">
+                    <input type="text" placeholder="Confirm password">
+                </div>
+                <div class="item__grid-form">
+                    <input id="formAgreementFirst" removeAttr type="checkbox" required >
+                    <label for="formAgreementFirst"><span>I want to receive mews and special offers</span></label>
+                </div>
+                <div class="item__grid-form">
+                    <input id="formAgreementSecond" removeAttr type="checkbox" required >
+                    <label for="formAgreementSecond"><span>I agree with the Terms and Conditions</span></label>
+                </div>
+            </div>
+            <div class="part__bottom">
+                <button class="btn" type="button">Submit</button>
+            </div>
+        </form>
+
+    </div>
+</header>
+</body>
+</html>
