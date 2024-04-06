@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <nav class="nav">
+            <h1 class="nav__title">Flight - Search List</h1>
+            <div class="nav__touch">
+                <a class="nav__btn" href="#">Home</a>
+                <p class="slash">/</p>
+                <a class="nav__btn" href="#">Flight Search List</a>
+            </div>
+        </nav>
+    </div>
+</header>
+<section class="#">
+    <div class="container">
+        <form class="main-form">
+            <div class="header-form__first">
+
+
+                <div class="container__checkbox">
+                    <input class="way" name="one" id="oneWay" type="radio" checked>
+                    <label class="container__checkbox_label" for="oneWay">One Way</label>
+                </div>
+                <div class="container__checkbox">
+                    <input class="way" name="one" id="roundTrip" type="radio">
+                    <label class="container__checkbox_label" for="roundTrip">Round Trip</label>
+
+                </div>
+
+
+            </div>
+            <div class="header-form__second">
+                <input class="location" type="text" placeholder="From">
+                <input class="location"type="text" placeholder="To">
+                <input class="calendar" type="text" placeholder="Deport Date">
+                <input class="calendar" type="text" placeholder="Return Date">
+                <select id="cities">
+                    <option value="First Class">First Class</option>
+                    <option value="Business Class">Business Class</option>
+                    <option value="Economy Class">Economy Class</option>
+                </select>
+                <button class="search" type="button">Search</button>
+            </div>
+            <div class="footer-part-form">
+                <div class="footer-part-form__left">
+                    <div class="content">
+                        <p class="main__filter__text">Filter</p>
+                        <p class="filter__text">No. of Stops</p>
+                        <div class="flex">
+                            <input class="checkbox" type="checkbox">
+                            <p>Non Stop</p>
+                        </div>
+                        <div class="flex">
+                            <input class="checkbox" type="checkbox">
+                            <p>1 Stop</p>
+                        </div>
+                        <div class="flex">
+                            <input class="checkbox" type="checkbox">
+                            <p>2+ Stop</p>
+                        </div>
+                        <p class="filter__text">Price</p>
+                        <div class="flexDollar flex">
+                            <div>
+                                <p style="margin-bottom: 3px">Min:</p>
+                                <input type="text" style="max-width: 50px; width: 100%; margin-right: 7px" placeholder="0">
+                            </div>
+                            <p style="margin-right: 7px"> $ - </p>
+                            <div>
+                                <p style="margin-bottom: 3px">Max:</p>
+                                <input type="text" style="max-width: 50px; width: 100%; margin-right: 7px" placeholder="1000">
+                            </div>
+                            <p> $ </p>
+                        </div>
+                        <p class="filter__text">Airlines</p>
+                        <div class="flex">
+                            <input class="checkbox" type="checkbox">
+                            <p>Asiana Airlines</p>
+                        </div>
+                        <div class="flex">
+                            <input class="checkbox" type="checkbox">
+                            <p>American Airlines</p>
+                        </div>
+                        <div class="flex">
+                            <input class="checkbox" type="checkbox">
+                            <p>Air Canada</p>
+                        </div>
+                        <div class="flex">
+                            <input class="checkbox" type="checkbox">
+                            <p>Air India</p>
+                        </div>
+                        <div class="flex">
+                            <input class="checkbox" type="checkbox">
+                            <p>Jet Airways</p>
+                        </div>
+                        <div class="flex">
+                            <input class="checkbox" type="checkbox">
+                            <p>Spicejet</p>
+                        </div>
+                        <div class="flex">
+                            <input class="checkbox" type="checkbox">
+                            <p>IndiGo</p>
+                        </div>
+                        <div class="flex">
+                            <input class="checkbox" type="checkbox">
+                            <p>Multiple Airlines</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="footer-part-form__right">
+                   <table class="table"> <!-- Тело таблицы-->
+                       <caption> <!-- Подпись таблицы-->
+                           <h1>Dehli to Sydney</h1>
+                       </caption>
+                       <tr><!-- Строчка таблицы-->
+                           <th><!-- Первая строчка таблицы-->
+                               Airlines
+                           </th>
+                           <th><!-- Первая строчка таблицы-->
+                               Departure
+                           </th>
+                           <th><!-- Первая строчка таблицы-->
+                               Duration
+                           </th>
+                           <th><!-- Первая строчка таблицы-->
+                               Arrival
+                           </th>
+                           <th><!-- Первая строчка таблицы-->
+                               Price
+                           </th>
+                           <th><!-- Первая строчка таблицы-->
+
+                           </th>
+                       </tr>
+                       <tr><!-- Строчка таблицы-->
+                           <td><!-- Ячейка таблицы-->
+                               <div class="item">
+                                   <p class="item__text">IndiGo</p>
+                                   <p class="item__text">6E-2489</p>
+                               </div>
+                           </td>
+                           <td><!-- Ячейка таблицы-->
+                               <div class="item">
+                                   <p class="item__text">23:30</p>
+                                   <p class="item__text">Dehli</p>
+                               </div>
+                           </td>
+                           <td><!-- Ячейка таблицы-->
+                               <div class="item">
+                                   <p class="item__text">18h 55m</p>
+                                   <p class="item__text">Non Stop</p>
+                               </div>
+                           </td>
+                           <td><!-- Ячейка таблицы-->
+                               <div class="item">
+                                   <p class="item__text">18:15</p>
+                                   <p class="item__text">Sydney</p>
+                               </div>
+                           </td>
+                           <td><!-- Ячейка таблицы-->
+                               <div class="item">
+                                   <p class="item__text">$980</p>
+                               </div>
+                           </td>
+                           <td><!-- Ячейка таблицы-->
+                               <div class="item">
+                                   <button type="button" class="item__btn">Book</button>
+                                   <p class="item__text item__text-color">Flight details</p>
+                               </div>
+                           </td>
+                       </tr>
+                       <tr><!-- Строчка таблицы-->
+                           <td><!-- Ячейка таблицы-->
+                               <div class="item">
+                                   <p class="item__text">IndiGo</p>
+                                   <p class="item__text">6E-2489</p>
+                               </div>
+                           </td>
+                           <td><!-- Ячейка таблицы-->
+                               <div class="item">
+                                   <p class="item__text">23:30</p>
+                                   <p class="item__text">Dehli</p>
+                               </div>
+                           </td>
+                           <td><!-- Ячейка таблицы-->
+                               <div class="item">
+                                   <p class="item__text">18h 55m</p>
+                                   <p class="item__text">Non Stop</p>
+                               </div>
+                           </td>
+                           <td><!-- Ячейка таблицы-->
+                               <div class="item">
+                                   <p class="item__text">18:15</p>
+                                   <p class="item__text">Sydney</p>
+                               </div>
+                           </td>
+                           <td><!-- Ячейка таблицы-->
+                               <div class="item">
+                                   <p class="item__text">$980</p>
+                               </div>
+                           </td>
+                           <td><!-- Ячейка таблицы-->
+                               <div class="item">
+                                   <button type="button" class="item__btn">Book</button>
+                                   <p class="item__text item__text-color">Flight details</p>
+                               </div>
+                           </td>
+                       </tr>
+                       <tr><!-- Строчка таблицы-->
+                           <td><!-- Ячейка таблицы-->
+                               <div class="item">
+                                   <p class="item__text">IndiGo</p>
+                                   <p class="item__text">6E-2489</p>
+                               </div>
+                           </td>
+                           <td><!-- Ячейка таблицы-->
+                               <div class="item">
+                                   <p class="item__text">23:30</p>
+                                   <p class="item__text">Dehli</p>
+                               </div>
+                           </td>
+                           <td><!-- Ячейка таблицы-->
+                               <div class="item">
+                                   <p class="item__text">18h 55m</p>
+                                   <p class="item__text">Non Stop</p>
+                               </div>
+                           </td>
+                           <td><!-- Ячейка таблицы-->
+                               <div class="item">
+                                   <p class="item__text">18:15</p>
+                                   <p class="item__text">Sydney</p>
+                               </div>
+                           </td>
+                           <td><!-- Ячейка таблицы-->
+                               <div class="item">
+                                   <p class="item__text">$980</p>
+                               </div>
+                           </td>
+                           <td><!-- Ячейка таблицы-->
+                               <div class="item">
+                                   <button type="button" class="item__btn">Book</button>
+                                   <p class="item__text item__text-color">Flight details</p>
+                               </div>
+                           </td>
+                       </tr>
+                       <tr><!-- Строчка таблицы-->
+                           <td><!-- Ячейка таблицы-->
+                               <div class="item">
+                                   <p class="item__text">IndiGo</p>
+                                   <p class="item__text">6E-2489</p>
+                               </div>
+                           </td>
+                           <td><!-- Ячейка таблицы-->
+                               <div class="item">
+                                   <p class="item__text">23:30</p>
+                                   <p class="item__text">Dehli</p>
+                               </div>
+                           </td>
+                           <td><!-- Ячейка таблицы-->
+                               <div class="item">
+                                   <p class="item__text">18h 55m</p>
+                                   <p class="item__text">Non Stop</p>
+                               </div>
+                           </td>
+                           <td><!-- Ячейка таблицы-->
+                               <div class="item">
+                                   <p class="item__text">18:15</p>
+                                   <p class="item__text">Sydney</p>
+                               </div>
+                           </td>
+                           <td><!-- Ячейка таблицы-->
+                               <div class="item">
+                                   <p class="item__text">$980</p>
+                               </div>
+                           </td>
+                           <td><!-- Ячейка таблицы-->
+                               <div class="item">
+                                   <button type="button" class="item__btn">Book</button>
+                                   <p class="item__text item__text-color">Flight details</p>
+                               </div>
+                           </td>
+                       </tr>
+                       <tr><!-- Строчка таблицы-->
+                           <td><!-- Ячейка таблицы-->
+                               <div class="item">
+                                   <p class="item__text">IndiGo</p>
+                                   <p class="item__text">6E-2489</p>
+                               </div>
+                           </td>
+                           <td><!-- Ячейка таблицы-->
+                               <div class="item">
+                                   <p class="item__text">23:30</p>
+                                   <p class="item__text">Dehli</p>
+                               </div>
+                           </td>
+                           <td><!-- Ячейка таблицы-->
+                               <div class="item">
+                                   <p class="item__text">18h 55m</p>
+                                   <p class="item__text">Non Stop</p>
+                               </div>
+                           </td>
+                           <td><!-- Ячейка таблицы-->
+                               <div class="item">
+                                   <p class="item__text">18:15</p>
+                                   <p class="item__text">Sydney</p>
+                               </div>
+                           </td>
+                           <td><!-- Ячейка таблицы-->
+                               <div class="item">
+                                   <p class="item__text">$980</p>
+                               </div>
+                           </td>
+                           <td><!-- Ячейка таблицы-->
+                               <div class="item">
+                                   <button type="button" class="item__btn">Book</button>
+                                   <p class="item__text item__text-color">Flight details</p>
+                               </div>
+                           </td>
+                       </tr>
+                       <tr><!-- Строчка таблицы-->
+                           <td><!-- Ячейка таблицы-->
+                               <div class="item">
+                                   <p class="item__text">IndiGo</p>
+                                   <p class="item__text">6E-2489</p>
+                               </div>
+                           </td>
+                           <td><!-- Ячейка таблицы-->
+                               <div class="item">
+                                   <p class="item__text">23:30</p>
+                                   <p class="item__text">Dehli</p>
+                               </div>
+                           </td>
+                           <td><!-- Ячейка таблицы-->
+                               <div class="item">
+                                   <p class="item__text">18h 55m</p>
+                                   <p class="item__text">Non Stop</p>
+                               </div>
+                           </td>
+                           <td><!-- Ячейка таблицы-->
+                               <div class="item">
+                                   <p class="item__text">18:15</p>
+                                   <p class="item__text">Sydney</p>
+                               </div>
+                           </td>
+                           <td><!-- Ячейка таблицы-->
+                               <div class="item">
+                                   <p class="item__text">$980</p>
+                               </div>
+                           </td>
+                           <td><!-- Ячейка таблицы-->
+                               <div class="item">
+                                   <button type="button" class="item__btn">Book</button>
+                                   <p class="item__text item__text-color">Flight details</p>
+                               </div>
+                           </td>
+                       </tr>
+                       <tr><!-- Строчка таблицы-->
+                           <td><!-- Ячейка таблицы--></td>
+                           <td><!-- Ячейка таблицы--></td>
+                           <td><!-- Ячейка таблицы--></td>
+                           <td><!-- Ячейка таблицы--></td>
+                           <td><!-- Ячейка таблицы--></td>
+                           <td><!-- Ячейка таблицы--></td>
+                       </tr>
+                   </table>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+</body>
+</html>
