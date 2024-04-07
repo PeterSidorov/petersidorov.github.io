@@ -119,6 +119,11 @@ a {
     font-size: 20px;
     color: white;
 }
+@media screen and (max-width: 500px){
+    .container {
+        padding: 0 10px;
+    }
+}
 /*
 .tor {
     position: absolute;

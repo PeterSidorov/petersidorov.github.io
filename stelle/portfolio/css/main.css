@@ -26,3 +26,22 @@ a {
     width: 100%;
     margin: 0 auto;
 }
+.grid__container {
+    margin: 50px auto;
+}
+.btn {
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 15px 40px;
+    background-color: transparent;
+    color: black;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.7s;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.7);
+}
