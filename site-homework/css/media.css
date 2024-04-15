@@ -1,0 +1,129 @@
+.menu__media {
+    display: none;
+}
+
+@media screen and (max-width: 480px){
+    /* Header */
+    .menu {
+        display: none;
+    }
+    .phone {
+        display: none;
+    }
+    .logo__container {
+        max-width: 126px;
+        width: 100%;
+        background-image: url("../img/media/logo__black_480.svg");
+        padding: 11px 0;
+        margin: 9px 0 11px 0;
+    }
+    .logo__container_img {
+        display: none;
+    }
+    .menu__media {
+        display: block;
+        max-width: 28px;
+        width: 100%;
+    }
+    .menu__media_item {
+        width: 100%;
+        border-bottom: 1px solid black;
+        border-radius: 20px;
+    }
+    .menu__media_item:not(:last-child) {
+        margin-bottom: 4.6px;
+    }
+    .nav {
+        padding: 0 30px;
+    }
+    /* Company */
+    .company {
+        max-width: 480px;
+        width: 100%;
+        background-position: -456px 0;
+        padding: 80px 0 410px;
+        background-size: cover;
+    }
+    .container__company {
+        margin: 0;
+        max-width: 281px;
+        width: 100%;
+        padding: 172px 37px 44px 29px;
+
+    }
+    .container__company_text {
+        font-size: 14px;
+        max-width: 214px;
+        width: 100%;
+    }
+    .company__border {
+        position: absolute;
+        width: 208px;
+        height: 0;
+        border-left: 0;
+        border-top: 1px solid #6DB744;
+        top: 283px;
+        left: 30px;
+    }
+    .container__with_grid {
+        padding: 0;
+        top: 166px;
+        left: 29px;
+    }
+    .title {
+        font-size: 24px;
+        margin-bottom: 9px;
+    }
+    .speed {
+        font-size: 14px;
+        margin-top: 7px;
+    }
+    /* About__company */
+    .about__company {
+
+    }
+    .about__company_title {
+        font-size: 36px;
+        margin-top: 64px;
+    }
+    .about__company_border {
+        margin: 6px 0 16px;
+    }
+    .about__company_text {
+        margin: 69px 0 64px;
+        max-width: 420px;
+        width: 100%;
+        font-size: 14px;
+        line-height: 131.7%;
+    }
+    .about__company__logo__container {
+        max-width: 157px;
+        width: 100%;
+        background-image: url("../img/media/logo__white_480.svg");
+        padding: 13px 0;
+        margin: 0;
+    }
+
+
+
+
+
+
+
+
+    .advantages__company {
+        display: none;
+    }
+    .services__company {
+        display: none;
+    }
+    .time__company {
+        display: none;
+    }
+    .gallery__company {
+        display: none;
+    }
+    .footer {
+        display: none;
+    }
+}
