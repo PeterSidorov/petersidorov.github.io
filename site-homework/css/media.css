@@ -127,3 +127,8 @@
         display: none;
     }
 }
+@media screen and (max-width: 430px){
+    .about__company {
+        padding: 0 20px;
+    }
+}
