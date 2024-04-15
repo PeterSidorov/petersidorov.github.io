@@ -10,6 +10,9 @@
     .phone {
         display: none;
     }
+    .container__with_grid {
+        background-image: none;
+    }
     .logo__container {
         max-width: 126px;
         width: 100%;
