@@ -103,27 +103,103 @@
         padding: 13px 0;
         margin: 0;
     }
-
-
-
-
-
-
-
-
+    /* advantages__company */
     .advantages__company {
-        display: none;
+        margin: 54px 0 58px;
     }
+    .advantages__company_title {
+        font-size: 36px;
+    }
+    .advantages__company_border {
+        border-bottom: 1px solid #6DB744;
+        max-width: 273px;
+        margin: 16px 0 34px;
+    }
+    .advantages__company_text {
+        max-width: 420px;
+    }
+    /* services__company */
     .services__company {
-        display: none;
+        padding: 47px 0 50px;
     }
+    .services__company_title {
+        font-size: 36px;
+    }
+    .services__company_border {
+        margin: 28px 0 34px;
+    }
+    .services__company_grid {
+        display: grid;
+        grid-template-columns: 166px 166px;
+        grid-gap: 30px 60px;
+    }
+    /* time__company */
     .time__company {
+        padding: 58px 0 97px;
+    }
+    .time__company_title {
+        font-size: 30px;
+        text-align: center;
+        max-width: 420px;
+        width: 100%;
+    }
+    .time__company_border {
+        max-width: 420px;
+        margin: 32px 0;
+    }
+    .time__company_item_text {
+        font-size: 14px;
+        max-width: 396px;
+        width: 100%;
+        line-height: 146.7%;
+        margin-top: 2px;
+    }
+    .time__company_item_text br {
         display: none;
     }
+    .around {
+        width: 7px;
+        height: 7px;
+    }
+    /* gallery__company */
     .gallery__company {
         display: none;
     }
+    /* footer */
     .footer {
+        padding: 62px 0;
+        flex-direction: column;
+
+    }
+    .container__footer_menu {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        max-width: 200px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .footer__border {
+        height: 0;
+        max-width: 195px;
+        width: 100%;
+        border-bottom: 1px solid #6DB744;
+        border-left: none;
+        margin: 0 102px 0 101px;
+    }
+    .footer__logo {
+        max-width: 206px;
+        margin: 0 auto 59px;
+    }
+    .container__footer_menu__text_right_mail {
+        margin: 0 0 12px 22px;
+    }
+    .container__footer_menu_text_right_phone {
+        margin: 0 0 0 22px;
+    }
+    .footer__border {
+        margin: 45px 0;
+    }
+    .footer__background_img {
         display: none;
     }
 }
