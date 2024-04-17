@@ -177,7 +177,7 @@
 
     .gallery__company_wrapper {
         display: grid;
-        grid-template-columns: 480px;
+        grid-template-columns: 1fr;
         grid-template-rows: 220px;
     }
     .gallery__company_wrapper_item:not(:nth-of-type(2)) {
@@ -352,5 +352,20 @@
 @media screen and (max-width: 430px){
     .about__company {
         padding: 0 20px;
+    }
+}
+@media screen and (max-width: 393px){
+    .services__company_grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 0 0;
+    }
+    .company__grid_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .company__grid_item_text {
+         width: fit-content;
     }
 }
