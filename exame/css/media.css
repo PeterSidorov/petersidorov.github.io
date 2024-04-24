@@ -1,0 +1,112 @@
+@media screen and (max-width: 850px ) {
+    .menu {
+        padding-left: 50px;
+        .menu__right-part {
+            display: none;
+        }
+    }
+    .main__about_company__left-part {
+        width: 50%;
+        padding: 150px 45px;
+    }
+    /**/
+    .story__company_container__left-part {
+        width: 50%;
+    }
+    .story__company_container__right-part {
+        width: 50%;
+    }
+    /**/
+    .gallery__grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .gallery__grid_item:nth-of-type(2) {
+        background-image: url(../img/gallery/wowwow.png);
+        background-position: center;
+    }
+    .gallery__grid_item:nth-of-type(3), .gallery__grid_item:nth-of-type(1){
+        display: none;
+    }
+    /**/
+    .features__grid {
+        grid-template-columns: 1fr 1fr;
+        max-width: 550px;
+        width: 100%;
+    }
+    .features__grid_item:nth-of-type(3) {
+        border-right: 1px solid grey;
+    }
+    .features__grid_item:nth-of-type(4) {
+        border-bottom: 1px solid grey;
+        border-right: none;
+    }
+    .features__grid_item:nth-of-type(2) {
+        border-right: none;
+    }
+    /**/
+    .form {
+        max-width: 550px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 600px ) {
+    .menu__left-part_item:not(:first-child) {
+        display: none;
+    }
+    /**/
+    .main__about_company {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .main__about_company__left-part {
+        width: 100%;
+    }
+    .main__about_company__right-part {
+        padding: 281px 0;
+        width: 100%;
+    }
+    /**/
+    .story__company_container {
+        display: flex;
+        flex-direction: column;
+    }
+    .story__company_container__left-part {
+        width: 100%;
+        padding: 154px 0;
+    }
+    .story__company_container__right-part {
+        width: 100%;
+    }
+    .story__company_container:nth-of-type(2n) {
+        display: flex;
+        flex-direction: column;
+    }
+    /**/
+    .gallery__grid {
+        grid-template-columns: 1fr;
+    }
+    .gallery__grid_item:nth-of-type(4) {
+        display: none;
+    }
+    /**/
+    .features__grid {
+        grid-template-columns: 1fr;
+        max-width: 350px;
+        width: 100%;
+    }
+    .features__grid_item:nth-child(1n) {
+        border-right: none;
+        border-bottom: 1px solid grey;
+    }
+    /**/
+    .form {
+        max-width: 350px;
+    }
+    .name__info {
+        flex-direction: column;
+    }
+    .contact {
+        display: block;
+    }
+}
