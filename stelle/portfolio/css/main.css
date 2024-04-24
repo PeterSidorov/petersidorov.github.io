@@ -32,15 +32,20 @@ a {
     text-align: center;
     text-transform: uppercase;
     font-size: 20px;
-    padding: 15px 40px;
+    padding: 20px 0;
     background-color: transparent;
-    color: black;
+    color: white;
     border-radius: 50px;
     outline: none;
     cursor: pointer;
     font-weight: 500;
-    transition: 0.7s;
+    transition: 1s;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.7);
+}
+.lol:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    transition: 1s;
 }
 /* Header */
 .header {
@@ -57,33 +62,36 @@ a {
     transition: 3s;
 }
 .grid__container {
-    margin: 100px auto;
+    margin: 40% auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
     max-width: 500px;
     width: 100%;
 }
 .grid__container_item {
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
 }
 #changeImg {
     position: absolute;
-    left: 20px;
+    right: 20px;
     top: 20px;
 
+    border: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 20px 30px;
     background-color: transparent;
-    color: black;
-    padding: 10px 20px;
-    border-radius: 30px;
-    border: 2px solid black;
-
-    font-weight: 700;
-    transition: 1s;
-
+    color: white;
+    border-radius: 50px;
+    outline: none;
     cursor: pointer;
+    transition: 1s;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.7);
 }
 #changeImg:hover {
+    background-color: rgba(0, 0, 0, 0.7);
     transition: 1s;
-    color: greenyellow;
-    border: 2px solid greenyellow;
 }
+
