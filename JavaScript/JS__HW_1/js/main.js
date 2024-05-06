@@ -57,7 +57,7 @@ btnUser.addEventListener('click', function () {
                howYouOld = (yearNow - yearDataUser) - 1;
                console.log('День больше')
            } if (dayDataUser < dayNow) {
-               howYouOld = (yearNow - yearDataUser) - 1;
+               howYouOld = (yearNow - yearDataUser);
                console.log('День меньше')
            } else {
                howYouOld = (yearNow - yearDataUser);
@@ -71,8 +71,39 @@ btnUser.addEventListener('click', function () {
        fullNameUserName.innerHTML = "Вас зовут: " + nameUser.value;
        fullNameUserBirthday.innerHTML = "Вам " + howYouOld + " год";
    }
+})
+/**/
 
+const sSquareInput = document.getElementById('sSquareInput');
+const sSquareBtn = document.getElementById('sSquareBtn');
+const sSquareFinal = document.getElementById('sSquareFinal');
 
+const sSquareText = document.getElementById('sSquareText');
+
+sSquareBtn.addEventListener('click', function () {
+    sSquareText.classList.add('active')
+    let sSquareInputValue = sSquareInput.value;
+    let sSquareAnswer = sSquareInputValue * sSquareInputValue;
+
+    sSquareFinal.innerHTML = " " + sSquareAnswer + "см";
+
+})/**/
+
+const circleRadiusInput = document.getElementById('circleRadiusInput');
+const circleRadiusBtn = document.getElementById('circleRadiusBtn');
+const circleRadiusText = document.getElementById('circleRadiusText');
+
+const circleRadiusFinal = document.getElementById('circleRadiusFinal');
+
+circleRadiusBtn.addEventListener('click', function () {
+    circleRadiusText.classList.add('active')
+
+    console.log(circleRadiusInput.value);
+
+    let circleRadiusInputValue = circleRadiusInput.value;
+
+    let circleRadiusAnswer = /*Math.PI*/ 3.14 * (circleRadiusInputValue * circleRadiusInputValue);
+    circleRadiusFinal.innerHTML = " " + circleRadiusAnswer;
 
 
 })

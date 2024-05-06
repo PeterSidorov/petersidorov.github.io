@@ -67,3 +67,19 @@ label {
 .boxForDate.color{
     border: 2px solid red;
 }
+/**/
+.sSquareText {
+    display: none;
+}
+.sSquareText.active {
+    margin-top: 10px;
+    display: block;
+}
+/**/
+.circleRadiusText {
+    display: none;
+}
+.circleRadiusText.active {
+    margin-top: 10px;
+    display: block;
+}
