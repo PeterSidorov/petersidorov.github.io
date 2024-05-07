@@ -62,7 +62,7 @@ a {
     transition: 3s;
 }
 .grid__container {
-    margin: 40% auto;
+    margin: 17% auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;

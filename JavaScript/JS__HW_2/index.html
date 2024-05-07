@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<header>
+    <div class="container" style="display: flex; align-items: center ; margin: 50px auto">
+        <input id="a" type="number">
+
+        <input id="center" style="max-width: 50px; width: 100%; margin: 0 10px" name="city" list="calculator" />
+        <datalist id="calculator">
+            <option value="+" />
+            <option value="-" />
+            <option value="/" />
+            <option value="*" />
+            <option value="%" />
+        </datalist>
+
+        <input id="b" type="number">
+
+        <p id="answer" style="margin: 0 10px"> = </p>
+        <button id="calculatorBtn" style="margin-left: 50px" type="button" class="btn">Ответ</button>
+    </div>
+</header>
+<section class="#">
+    <div class="container">
+        <input id="monthInput" type="text" list="calendar">
+
+        <datalist id="calendar">
+            <option value="Январь" />
+            <option value="Февраль" />
+            <option value="Март" />
+            <option value="Апрель" />
+            <option value="Май" />
+            <option value="Июнь" />
+            <option value="Июль" />
+            <option value="Август" />
+            <option value="Сентябрь" />
+            <option value="Октябрь" />
+            <option value="Ноябрь" />
+            <option value="Декабрь" />
+        </datalist>
+
+        <button id="monthBtn" type="button" class="btn">Какой это месяц ?</button>
+        <p style="color: white;font-weight: 700; text-transform: uppercase" id="monthText"></p>
+    </div>
+</section>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -21,7 +21,7 @@
         grid-template-columns: 1fr 1fr;
     }
     .gallery__grid_item:nth-of-type(2) {
-        background-image: url(../../stelle/portfolio/img/wowwow.png);
+        background-image: url(../../../stelle/portfolio/img/wowwow.png);
         background-position: center;
     }
     .gallery__grid_item:nth-of-type(3), .gallery__grid_item:nth-of-type(1){
