@@ -7,10 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<header>
+<header class="header" id="header">
     <div class="container">
-        <input id="a" class="input__one" type="number">
-        <input id="b" class="input__one" type="number">
+        <div class="menuMain" id="menuMain">
+            <textarea rows="3" class="list" id="textArea" placeholder="Напишите сюда список продуктов"></textarea>
+            <a href="#" class="btn" id="btnAcceptTextArea">Start</a>
+        </div>
+        <div>
+            <ul id="repeatListFirst" class="repeatListFirst">
+                <!-- items не мешают работе сайта, потому что JS обнуляет все items в этом списке  -->
+                <li class="itemTextFirst">1 Бананы 1кг</li>
+                <li class="itemTextFirst">2 Яблоки</li>
+                <li class="itemTextFirst">3 Молоко</li>
+                <li class="itemTextFirst">4 Сахар</li>
+                <li class="itemTextFirst">5 Гречка</li>
+            </ul>
+
+        </div>
     </div>
 </header>
 <script src="js/main.js"></script>

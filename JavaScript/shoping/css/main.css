@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    background: lightsalmon;
 }
 * {
     box-sizing: border-box;
@@ -25,27 +24,109 @@ a {
 label {
     cursor: pointer;
 }
-.btn-margin {
-    margin-top: 15px;
-}
-.btn {
-    cursor: pointer;
-    padding: 7px 20px;
-    text-transform: uppercase;
-    color: grey;
-    border-radius: 7px;
-    border: 1px solid grey;
-    transition: 1s;
-    background: white;
-}
-.btn:hover {
-    transition: 1s;
-    color: black;
-    border: 1px solid black;
-}
 .container {
     max-width: 1140px;
     width: 100%;
     margin: 0 auto;
 }
+/* Header */
+.header {
+    height: 100vh;
+    overflow: hidden;
+    background-image: url("../img/wowwow.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menuMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 28%;
+}
+.menuMain.notActive {
+    display: none;
+}
+.list {
+    font-size: 14px;
+    max-width: 320px;
+    width: 100%;
+    padding: 10px;
+    margin: 20px auto 0;
+
+    background-color: transparent;
+    border: 1px solid white;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom: none;
+    cursor: pointer;
+
+    color: white;
+
+    outline: none ;
+    transition: 1s;
+
+    overflow:hidden;
+}
+.list:focus {
+    transition: 1s;
+    background-color: rgba(0,0,0,0.3);
+}
+.btn {
+    cursor: pointer;
+    padding: 7px 20px;
+    text-transform: uppercase;
+    color: darkgrey;
+
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+
+    border: 1px solid white;
+    transition: 0.5s;
+
+    max-width: 320px;
+    width: 100%;
+
+
+    text-align: center;
+
+    border-top: none;
+
+}
+.btn:hover {
+    transition: 0.5s;
+    color: white;
+
+    font-size: 18px;
+}
+.btn.focus {
+    background-color: rgba(0,0,0,0.3);
+}
 /**/
+.repeatListFirst {
+    display: none;
+}
+.repeatListFirst.active {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    width: 100%;
+    margin: 50px auto 0;
+
+    border: 1px solid white;
+    padding: 0 15px;
+    border-radius: 7px;
+}
+.itemTextFirst {
+    padding: 5px 0;
+    color: white;
+    font-size: 18px;
+    max-width: fit-content;
+    cursor: pointer;
+}
+.itemTextFirst.active {
+    text-decoration: 2px line-through white;
+}
+
+
+
