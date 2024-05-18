@@ -118,10 +118,9 @@ label {
     border-radius: 7px;
 }
 .itemTextFirst {
-    padding: 5px 0;
+    padding: 10px 0;
     color: white;
     font-size: 18px;
-    max-width: fit-content;
     cursor: pointer;
 }
 .itemTextFirst.active {

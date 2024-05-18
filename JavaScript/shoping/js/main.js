@@ -42,18 +42,37 @@ btnAcceptTextArea.addEventListener('click', function (){
 
     // Создает список продуктов
     ArrTextArea.filter(Boolean).forEach((book, i) => {
-        repeatListFirst.innerHTML += `<li class="itemTextFirst">${i + 1} ${book}</li>`;
+        repeatListFirst.innerHTML += `<li class="itemTextFirst">${i + 1 + ')'} ${book}</li>`;
     });
 
     let itemTextFirst = document.querySelectorAll('.itemTextFirst');
 
-    console.log(itemTextFirst);
-    console.log(itemTextFirst.length);
-
     for(let i = 0; i < itemTextFirst.length; i++ ) {
-        console.log(itemTextFirst[i]);
-        itemTextFirst[i].addEventListener('dblclick', function (){
-            itemTextFirst[i].classList.toggle('active');
+
+        itemTextFirst[i].addEventListener('click', function (){
+            this.classList.toggle('active');
+            /* Я не знаю что тут не так
+            let ccc = this.textContent.split(') ');
+            delete ccc[0];
+            console.log(ccc.filter(Boolean));
+            delete ArrTextArea[i]; //удалил айтем из массива на который нажали
+            // Два варианта кода
+            //1 вариант
+            ArrTextArea[ArrTextArea.filter(Boolean).length + 1] = ccc[1];
+            //2 вариант
+            //let newArrTextArea = ArrTextArea.filter(Boolean);
+            //newArrTextArea[newArrTextArea.length] = ccc[1];
+
+            //console.log(newArrTextArea);
+
+            console.log(ArrTextArea.filter(Boolean));
+            repeatListFirst.innerHTML = "";
+            // Создает список продуктов
+            ArrTextArea.filter(Boolean).forEach((book, i) => {
+                repeatListFirst.innerHTML += `<li class="itemTextFirst">${i + 1 + ')'} ${book}</li>`;
+
+            });
+             */
         })
     }
 });
