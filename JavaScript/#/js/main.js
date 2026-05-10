@@ -1,25 +1,35 @@
-function diSolito(a,b) {
-    console.log(a+b)
+let calkItemText = document.querySelectorAll(".calkItem__text");
+let area = document.getElementById("area");
+let ravno = document.getElementById("ravno");
+console.log(area);
+
+let sumFinal = 0;
+
+
+let arr = [];
+let test = 0;
+for (let i = 0; i < calkItemText.length; i++) {
+
+   calkItemText[i].addEventListener("click", function() {
+
+       arr[test]= this.textContent;
+       test++;
+
+       area.value = arr.join(' ');
+
+       if (calkItemText[i].textContent === '=') {
+           console.log(arr);
+
+           delete arr[arr.length - 1];
+
+
+           let string = arr.join(' ');
+
+           console.log(string);
+
+           area.value = eval(string);
+           console.log('Ответ = ' + eval(string));
+       }
+
+   })
 }
-const strelochnay = (a,g) => {
-    console.log(a+g)
-}
-
-diSolito(5, 4)
-strelochnay(3, 4)
-
-/* Как словить ошибку */
-const fnWithError = () => {
-    throw new Error('Ga ga ga... LOX')
-}
-
-try {
-    fnWithError()
-} catch (error) {
-    console.error(error)
-    console.log(error.message)
-
-}
-console.log('Continue...')
-/* ------------------ */
-

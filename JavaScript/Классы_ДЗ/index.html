@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<header class="header" style="margin-top: 50px">
+    <div class="container" style="display: flex; justify-content: space-between">
+        <div class="containerLeftPart" style="display: flex; flex-direction: column; width: 30%">
+            <label for="inputColor">Напишите цвет текста:</label>
+            <input type="text" id="inputColor" placeholder="Поле для цвета текста">
+
+            <label for="inputPercent">Напишите сколько процентов краски в принтере:</label>
+            <input type="text" id="inputPercent" placeholder="Поле для % краски">
+
+            <label for="inputText">Напишите текст:</label>
+            <input type="text" id="inputText" placeholder="Поле для текста">
+
+            <button class="btn" id="btn">START</button>
+
+        </div>
+
+        <div class="containerRightPart" style="width: 60%">
+            <div class="container" style="border: 1px solid black; border-radius: 20px">
+                <p class="printer" style="text-align: center">Ваш принтер:</p>
+                <div id="printer" style="text-align: center"></div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+<script src="js/main.js"></script>
+</body>
+</html>

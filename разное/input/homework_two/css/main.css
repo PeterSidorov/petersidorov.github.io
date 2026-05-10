@@ -92,14 +92,14 @@ label {
     color: #18a2b7;
     transition: 1s;
 }
-.text-password, .text-username {
+.text-password, .text-username, .text-email {
     font-size: 12px;
     color: red;
 }
 .none {
     display: none;
 }
-.username:focus, .password:focus {
+.username:focus, .password:focus, .email:focus {
     outline: 1px solid #18a2b7;
 }
 .username.red {
@@ -110,6 +110,13 @@ label {
     background-position: 97% center;
 }
 .password.red {
+    outline: 1px solid red;
+    background-image: url("../img/icons8.png");
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: 97% center;
+}
+.email.red {
     outline: 1px solid red;
     background-image: url("../img/icons8.png");
     background-repeat: no-repeat;

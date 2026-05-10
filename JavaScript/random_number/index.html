@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header class="header">
+    <div class="container ">
+        <div class="mainContainer">
+            <div class="tryNumber">
+                <p class="tryNumberTitle">Попробуй угадать число</p>
+                <div style="margin: 0 auto; max-width: 50px; width: 100%;">
+                    <input id="inputTryNumber" class="inputTryNumber" type="text">
+                </div>
+            </div>
+            <div class="randomNumberBox">
+                <p class="randomNumberTitle">
+                    Random number:
+                </p>
+                <p id="htmlRandomNumber" class="randomNumber">77</p>
+                <div class="btnBox">
+                    <button id="btn" class="btn">Generate random number</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="winner">
+    <div class="container">
+        <p id="winnerTitle" class="winnerTitle">Поздравляю, вы угадали число !</p>
+    </div>
+</section>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h3, h4, h5 h6 {
+    padding: 0;
+    margin: 0;
+}
+input, select, textarea {
+    cursor: pointer;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+.btn {
+    cursor: pointer;
+    padding: 7px 20px;
+    text-transform: uppercase;
+    color: grey;
+    border-radius: 7px;
+    border: 1px solid grey;
+    transition: 1s;
+    background: white;
+    margin-top: 8px;
+}
+.btn:hover {
+    transition: 1s;
+    color: black;
+    border: 1px solid black;
+}
+.container {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    background: #00b9eb;
+}
+/**/
+.mainMenu {
+    padding: 50px 0;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+}
+.mainMenuItem {
+    padding: 6px 15px;
+
+}
+.label {
+    text-align: justify;
+    margin-top: 8px;
+}
+.mainMenuTitle {
+    font-size: 25px;
+}
+
+.itemsGridColors {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+
+.itemColorBody {
+    margin: 26px 39px;
+    padding: 17px;
+    background: rgba(236, 233, 233, 0.4);
+    text-align: center;
+}
+.itemColorName {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.itemColorType {
+    margin: 5px 0;
+}
+.itemColorCode {
+    font-weight: 600;
+    font-size: 18px;
+}

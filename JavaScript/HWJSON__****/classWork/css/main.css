@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h3, h4, h5 h6 {
+    padding: 0;
+    margin: 0;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+.btn {
+    cursor: pointer;
+    padding: 7px 20px;
+    text-transform: uppercase;
+    color: grey;
+    border-radius: 7px;
+    border: 1px solid grey;
+    transition: 1s;
+    background: white;
+}
+.btn:hover {
+    transition: 1s;
+    color: black;
+    border: 1px solid black;
+}
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+}
+/**/
+.formMain {
+    background-color: lightgray;
+    padding: 60px 40px;
+    border: 5px solid grey;
+}
+.search {
+    width: 100%;
+    padding: 7px 10px;
+}
+.formItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    padding: 12px 25px;
+}
+
+.bottomForm {
+    display: flex;
+    justify-content: space-between;
+}
+.bottomFormLeft {
+    width: 45%;
+}
+.bottomFormRight {
+    width: 45%;
+}
+
+.search {
+    margin-bottom: 20px;
+}
+.staticText {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.menu {
+    display: flex;
+}
+.imgBody {
+    width: 100px;
+    height: 100px;
+}
+.imgMain {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.green {
+    background-color: green;
+}
+.orange {
+    background-color: orange;
+}
+.red {
+    background-color: red;
+}
+.g {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+.style2 {
+    background-color: grey;
+    margin: 0 auto;
+}

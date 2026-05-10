@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="mainMenu">
+            <h1 class="mainMenuItem mainMenuTitle">Create new color</h1>
+            <label id="labelColorName" style="position: relative" class="label" for="color">
+                Color:
+                <span id="errorColorName" style="font-size: 15px; color: red;position: absolute; right: 0; top: 0"></span>
+            </label>
+
+            <input id="color" class="mainMenuItem" name="color" type="text">
+
+            <label class="label" for="hhh">Type:</label>
+            <select id="typeMain" name="hhh" class="mainMenuItem">
+                <option value="RGB" id="rgb">RGB</option>
+                <option value="RGBA" id="rgba">RGBA</option>
+                <option value="HEX" id="hex">HEX</option>
+            </select>
+            <label style="position: relative" class="label" for="code">
+                Code:
+                <span id="errorColorCode" style=" font-size: 13px; color: red;position: absolute; right: 0; top: 0"></span>
+            </label>
+            <input id="code" class="mainMenuItem" name="code" type="text">
+            <button id="btnSave" class="btn">Save</button>
+
+        </div>
+    </div>
+</header>
+<section class="palitra">
+    <div class="container">
+        <div class="itemsGridColors">
+
+        </div>
+    </div>
+</section>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -29,15 +29,17 @@ textArea.addEventListener( 'input', function () {
 
 
 /**/
-repeatListFirst.innerHTML = "";
-let test;
+
+
+
 btnAcceptTextArea.addEventListener('click', function (){
+    repeatListFirst.innerHTML = ""; //Очищает список
+
     menuMain.classList.add('notActive');// Убирает текст арену после нажатия на кнопку
     repeatListFirst.classList.add('active');// Показывает список продуктов после нажатия на кнопку
 
-    let ArrTextArea = textArea.value.split('\n'); //Создание массива с айтемами из текст арены
+     let ArrTextArea = textArea.value.split('\n'); //Создание массива с айтемами из текст арены
     // console.log(ArrTextArea);
-
 
 
     // Создает список продуктов
@@ -45,36 +47,23 @@ btnAcceptTextArea.addEventListener('click', function (){
         repeatListFirst.innerHTML += `<li class="itemTextFirst">${i + 1 + ')'} ${book}</li>`;
     });
 
-    let itemTextFirst = document.querySelectorAll('.itemTextFirst');
-
-    for(let i = 0; i < itemTextFirst.length; i++ ) {
-
-        itemTextFirst[i].addEventListener('click', function (){
+    for(let i = 0; i < repeatListFirst.children.length; i++ ) {
+        repeatListFirst.children[i].addEventListener('click', function (){
             this.classList.toggle('active');
-            /* Я не знаю что тут не так
-            let ccc = this.textContent.split(') ');
-            delete ccc[0];
-            console.log(ccc.filter(Boolean));
+
+            /*АААААААААААААААААААААА*/
+            let clickElement = this.textContent.split(') ');
+            delete clickElement[0];
             delete ArrTextArea[i]; //удалил айтем из массива на который нажали
-            // Два варианта кода
-            //1 вариант
-            ArrTextArea[ArrTextArea.filter(Boolean).length + 1] = ccc[1];
-            //2 вариант
-            //let newArrTextArea = ArrTextArea.filter(Boolean);
-            //newArrTextArea[newArrTextArea.length] = ccc[1];
+            ArrTextArea[ArrTextArea.filter(Boolean).length + 1] = clickElement[1];
 
-            //console.log(newArrTextArea);
-
-            console.log(ArrTextArea.filter(Boolean));
             repeatListFirst.innerHTML = "";
             // Создает список продуктов
             ArrTextArea.filter(Boolean).forEach((book, i) => {
                 repeatListFirst.innerHTML += `<li class="itemTextFirst">${i + 1 + ')'} ${book}</li>`;
-
             });
-             */
         })
     }
-});
 
+});
 

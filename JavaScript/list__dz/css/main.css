@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h3, h4, h5 h6 {
+    padding: 0;
+    margin: 0;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+.btn {
+    cursor: pointer;
+    padding: 7px 20px;
+    text-transform: uppercase;
+    color: grey;
+    border-radius: 7px;
+    border: 1px solid grey;
+    transition: 1s;
+    background: white;
+    width: 100%;
+}
+.btn:hover {
+    transition: 1s;
+    color: black;
+    border: 1px solid black;
+}
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+}
+/**/
+.containerMain {
+    display: flex;
+    background-color: darkgray;
+    justify-content: space-between;
+    padding: 30px 100px;
+}
+.leftPart {
+    width: 45%;
+}
+.right__partPart {
+    width: 45%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#textUser {
+    width: 100%;
+}
+.main__list_item {
+    margin-left: 10px;
+    color: white;
+    font-size: 20px;
+}
+.textInfoInput {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.adminPanel {
+    margin: 10px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 16px;
+}
+
+.inputMain {
+    display: block;
+}
+.containerItem {
+    display: flex;
+    align-items: flex-start;
+    color: white;
+}
+.errore {
+    display: none;
+}
+.errore.active {
+    display: block;
+}

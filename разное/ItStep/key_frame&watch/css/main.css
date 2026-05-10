@@ -40,18 +40,10 @@ a {
     width: 220px;
     border: 2px lightgreen solid;
     margin-left: 30px;
+
     animation-name: start;
+
     animation-duration: 60s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    transform-origin: 100%;
-}
-.first_arrow {
-    width: 150px;
-    border: 2px lightgreen solid;
-    margin-left: 100px;
-    animation-name: start;
-    animation-duration: 200s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     transform-origin: 100%;

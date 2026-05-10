@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h3, h4, h5 h6 {
+    padding: 0;
+    margin: 0;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+.btn {
+    cursor: pointer;
+    padding: 7px 20px;
+    text-transform: uppercase;
+    color: grey;
+    border-radius: 7px;
+    border: 1px solid grey;
+    transition: 1s;
+    background: white;
+}
+.btn:hover {
+    transition: 1s;
+    color: black;
+    border: 1px solid black;
+}
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: lightgray;
+}
+/**/
+.allUsers {
+    padding: 20px;
+}
+.allUsersText {
+    text-align: center;
+}
+.allUsersGrid {
+    margin: 20px auto 0;
+    max-width: 900px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+.allUsersGridItem {
+    border: 1px solid grey;
+    padding: 20px 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.allUsersGridItem:hover {
+    border: 1px solid green;
+    .allUsersName {
+        color: green;
+        transition: 1s;
+    }
+}
+.allUsersName {
+    color: black;
+    transition: 1s;
+}
+.userInfoText {
+    margin: 0;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.userInfoTables {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    td {
+        border: 1px solid grey;
+        padding: 12px;
+    }
+}
+.static {
+    width: 30%;
+}
+#showPost {
+    max-width: 900px;
+    width: 100%;
+}
+.userPostsText {
+    margin: 0;
+    text-align: center;
+    padding: 20px 0;
+}
+.userInfo {
+    display: none;
+}
+.userInfo.active {
+    display: block;
+}
+.usersPosts {
+    display: none;
+}
+.usersPosts.active {
+    display: block;
+}
+
+/*
+Users post
+ */
+.allPostUserGrid {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 900px;
+    width: 100%;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+}
+.allPostUserGridItem {
+    border: 1px solid grey;
+    padding: 30px;
+    text-align: center;
+}
+.title {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.body {
+    font-size: 20px;
+}

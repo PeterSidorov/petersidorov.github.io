@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header class="header">
+    <div class="container containerMain">
+        <div class="leftPart">
+            <textarea id="textUser" rows="4"></textarea>
+            <div class="adminPanel">
+                <p class="textInfoInput">
+                    Тут вы можете выбрать как вы хотите, что бы выглядел ваш список:
+                </p>
+                <div class="containerInput">
+                    <div class="containerItem">
+                        <input id="inputNumbers" class="inputMain" name="listInput" type="radio" value="1">
+                        <p class="containerItemText">Эта кнопка добавляет нумерацию</p>
+                    </div>
+                    <div class="containerItem">
+                        <input id="inputSymbol" class="inputMain" name="listInput" type="radio" value="2">
+                        <p class="containerItemText">Эта кнопка добавляет символ <span style="color: pink">`◦`</span></p>
+                    </div>
+                    <div class="containerItem">
+                        <input id="inputIndividual" class="inputMain" name="listInput" type="radio" value="3">
+                        <p class="containerItemText">Эта кнопка добавляет ваш индивидуальный знак</p>
+                        <input id="inputIndividualSymbol" style="margin-left: 10px;max-width: 21px" type="text">
+                    </div>
+                    <p id="errore" class="errore" style="color: red; font-size: 12px">
+                        Вы не ввели индивидуальный символ, напишите и попробуйте еще раз)
+                        <span style="color: green; font-size: 20px; font-weight: 900">↑</span>
+                    </p>
+                </div>
+            </div>
+            <button id="btn" class="btn">START</button>
+        </div>
+        <div class="right__partPart">
+            <ul id="mainList">
+                <li class="main__list_item"></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<script src="js/main.js"></script>
+</body>
+</html>
