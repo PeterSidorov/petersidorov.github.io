@@ -1,0 +1,29 @@
+@media screen and (max-width: 1259px) {
+    .textAboutUs {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 1131px){
+    .informationCompanyMainText {
+
+        max-width: 49%;
+    }
+    .informationCompanyMainPhoto {
+        max-width: 49%;
+    }
+}
+@media screen and (max-width: 1001px){
+    .informationCompanyMain {
+        display: block;
+    }
+    .informationCompanyMainText {
+        max-width: 100%;
+    }
+    .informationCompanyMainPhoto {
+        max-width: 100%;
+    }
+    .informationCompanyMainText {
+        margin-bottom: 20px;
+    }
+}
+

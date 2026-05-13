@@ -46,7 +46,7 @@ a {
     background-color: #4c6d4e;
     padding: 42px 24px;
     margin: 0 0 24px 0;
-
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.7);
 }
 .menu {
     display: flex;
@@ -67,10 +67,14 @@ a {
     background-color: #4b6b4d;
     border-radius: 20px;
     padding: 20px 24px;
-    box-shadow:
-            0 2px 4px rgba(0, 0, 0, 0.10),
-            0 6px 12px rgba(0, 0, 0, 0.12),
-            0 12px 24px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.7);
+    border: #4b6b4d 1px solid;
+
+}
+.itemCatalog:hover {
+    transition: 0.5s;
+    border: white 1px solid;
+
 }
 .containerPhotoItem {
     max-width: 300px;
@@ -96,6 +100,12 @@ a {
     width: 18px;
     height: 18px;
     border-radius: 50%;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.7);
+    opacity: 0.7;
+}
+.price {
+    color: white;
+
 }
 /*About US*/
 .aboutUs {
@@ -119,6 +129,7 @@ a {
     align-items: stretch;
 }
 .informationCompanyMainText {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.7);
 
     display: flex;
     flex-direction: column;
@@ -141,6 +152,8 @@ a {
     width: 100%;
     border-radius: 20px;
     overflow: hidden;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.7);
+
 }
 .informationCompanyMainPhotoImg {
     width: 100%;
@@ -164,6 +177,7 @@ a {
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.7);
 }
 .h1 {
     text-align: center;
